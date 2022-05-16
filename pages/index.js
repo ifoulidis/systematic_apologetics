@@ -5,6 +5,7 @@ import * as questions from './questions';
 import * as explanations from './explanations';
 import {GetResponse} from './logicmap';
 import {NavigationBar} from './navbar.js';
+import {Link} from 'next/link'
 
 
 export default function Home() {
@@ -69,7 +70,7 @@ export default function Home() {
         <h3 id="question">{question["question"]}</h3>
         <div className="d-grid gap-2">
           {question["answers"].map(answer =>
-            <Button variant="outline-primary" id="question-button" onClick={() => {
+            <Button key = {answer} variant="outline-primary" id="question-button" onClick={() => {
               let QAObject = {"question": question["question"], "answer": answer};
               let response = GetResponse(QAObject);
               QuestionOrContentHandler(response)}}>

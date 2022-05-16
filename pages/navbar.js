@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Offcanvas} from 'react-bootstrap';
+import Link from 'next/link'
 
 export function NavigationBar(){
   const [show, setShow] = useState(false);
@@ -10,26 +11,26 @@ export function NavigationBar(){
     <nav>
       <div className='desktopNav'>
         <div className="siteName">
-          <a href="/" >Systematic Philosophy</a>
+          <Link href="/" ><a className="mobileMenuLinks">Systematic Philosophy</a></Link>
         </div>
         <div className="dropdown">
           <button className="dropbtn">Quizes</button>
           <div className="dropdown-content">
-            <a href="/philosophies/atheism/">Evolution</a>
-            <a href="/philosophies/agnosticism/">The Origin of Life</a>
-            <a href="/philosophies/islam/">Something Else</a>
+            <Link href="/philosophies/atheism/"><a className="mobileMenuLinks">Evolution</a></Link>
+            <Link href="/philosophies/agnosticism/"><a className="mobileMenuLinks">The Origin of Life</a></Link>
+            <Link href="/philosophies/islam/"><a className="mobileMenuLinks">Something Else</a></Link>
             <hr />
-            <a href="/philosophies/">All Quizes</a>
+            <Link href="/philosophies/"><a className="mobileMenuLinks">All Quizes</a></Link>
           </div>
         </div>
         <div className="dropdown">
           <button className="dropbtn">Tell Me About...</button>
           <div className="dropdown-content">
-            <a href="/philosophies/atheism/">Atheism</a>
-            <a href="/philosophies/agnosticism/">Agnosticism</a>
-            <a href="/philosophies/islam/">Islam</a>
+            <Link href="/philosophies/atheism/"><a className="mobileMenuLinks">Atheism</a></Link>
+            <Link href="/philosophies/agnosticism/"><a className="mobileMenuLinks">Agnosticism</a></Link>
+            <Link href="/philosophies/islam/"><a className="mobileMenuLinks">Islam</a></Link>
             <hr />
-            <a href="/philosophies/">All Philosophies</a>
+            <Link href="/philosophies/"><a className="mobileMenuLinks">All Philosophies</a></Link>
           </div>
         </div>
       </div>
@@ -42,21 +43,20 @@ export function NavigationBar(){
             <Offcanvas.Title></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className='mmContent'>
-            <h3 href="/">Home</h3>
+            <h2 ><Link href="/"><a className="mobileMenuLinks">Home</a></Link></h2>
             <hr/>
-            <h2><a href="#">Quizes</a></h2>             
-            <h3><a href="#">Evolution</a></h3>
-            <h3><a href="#">The Origin of Life</a></h3>
-            <h3><a href="#">Something Else</a></h3>
+            <h2><Link  href="#"><a className="mobileMenuLinks">Quizes</a></Link></h2>             
+            <h3><Link href="#"><a className="mobileMenuLinks">Evolution</a></Link></h3>
+            <h3><Link href="#"><a className="mobileMenuLinks">The Origin of Life</a></Link></h3>
+            <h3><Link href="#"><a className="mobileMenuLinks">Something Else</a></Link></h3>
             <hr/>
-            <h2><a href="/philosophies/">Philosophies</a></h2>
-            <h3><a href="/philosophies/atheism/">Atheism</a></h3>
-            <h3><a href="/philosophies/agnosticism/">Agnosticism</a></h3>
-            <h3><a href="/philosophies/islam/">Islam</a></h3>
-            
+            <h2><Link href="/philosophies/"><a className="mobileMenuLinks">Philosophies</a></Link></h2>
+            <h3><Link href="/philosophies/atheism/"><a className="mobileMenuLinks">Atheism</a></Link></h3>
+            <h3><Link href="/philosophies/agnosticism/"><a className="mobileMenuLinks">Agnosticism</a></Link></h3>
+            <h3><Link href="/philosophies/islam/"><a className="mobileMenuLinks">Islam</a></Link></h3>
           </Offcanvas.Body>
         </Offcanvas>
-      </div>   
+      </div>
     </nav>
   )
 }
