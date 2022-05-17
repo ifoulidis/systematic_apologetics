@@ -1,6 +1,5 @@
 import * as questions from './questions';
 import * as explanations from './explanations'
-//import {exchangeCurrentQuestion} from "./App"
 
 export function GetResponse(s){
 

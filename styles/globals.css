@@ -12,6 +12,12 @@ body {
   font-family: Garamond, sans-serif;
 }
 
+.desktopNavLinks{
+  text-decoration: none;
+  color: cadetblue;
+  font-family: Garamond, sans-serif;
+}
+
 /* ###################### */
 /* Styles for the navbar. */
 

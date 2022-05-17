@@ -23,8 +23,8 @@ export default function AtheismHome(){
                     Sometimes, we even vow to ourselves not to even entertain certain possibilities because of bitterness.
                     If you believe yourself prepared to consider thoughtfully whether you are wrong, then we can begin.
                     If not, I suggest you talk your issue(s) through with someone sensible, and preferrably someone who
-                    is not an atheist. You might also be interested in content by former atheists. For example, see 
-                    <a href="https://www.youtube.com/watch?v=DakEcY7Z5GU">David Wood's testimony</a>.
+                    is not an atheist. You might also be interested in content by former atheists. For example, 
+                    see <a href="https://www.youtube.com/watch?v=DakEcY7Z5GU">David Wood's testimony</a>.
                 </p>
                 <p>
                     The first and easiest way to disprove atheism is to present begin with the fact that things exist and 
@@ -34,7 +34,7 @@ export default function AtheismHome(){
                     time-bound must itself be timeless. Therefore, there is at least one timeless thing outside of nature.
                 </p>
                 <p>
-                    Next, we can easily establish that a being which exists outside of time could not be <emph>made</emph> to do
+                    Next, we can easily establish that a being which exists outside of time could not be <em>made</em> to do
                     anything. Irrational forces must be triggered, but without time, there can be no trigger. I certainly 
                     admit that how rational beings act is quite beyond me, but the fact remains that they do, and they 
                     do so freely. Therefore, you must see that the timeless being outside of nature which can make choices

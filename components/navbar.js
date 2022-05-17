@@ -11,26 +11,26 @@ export function NavigationBar(){
     <nav>
       <div className='desktopNav'>
         <div className="siteName">
-          <Link href="/" ><a className="mobileMenuLinks">Systematic Philosophy</a></Link>
+          <Link href="/" ><a className="desktopNavLinks">Systematic Philosophy</a></Link>
         </div>
         <div className="dropdown">
           <button className="dropbtn">Quizes</button>
           <div className="dropdown-content">
-            <Link href="/philosophies/atheism/"><a className="mobileMenuLinks">Evolution</a></Link>
-            <Link href="/philosophies/agnosticism/"><a className="mobileMenuLinks">The Origin of Life</a></Link>
-            <Link href="/philosophies/islam/"><a className="mobileMenuLinks">Something Else</a></Link>
+            <Link href="/philosophies/atheism/"><a className="desktopNavLinks">Evolution</a></Link>
+            <Link href="/philosophies/agnosticism/"><a className="desktopNavLinks">The Origin of Life</a></Link>
+            <Link href="/philosophies/islam/"><a className="desktopNavLinks">Something Else</a></Link>
             <hr />
-            <Link href="/philosophies/"><a className="mobileMenuLinks">All Quizes</a></Link>
+            <Link href="/philosophies/"><a className="desktopNavLinks">All Quizes</a></Link>
           </div>
         </div>
         <div className="dropdown">
           <button className="dropbtn">Tell Me About...</button>
           <div className="dropdown-content">
-            <Link href="/philosophies/atheism/"><a className="mobileMenuLinks">Atheism</a></Link>
-            <Link href="/philosophies/agnosticism/"><a className="mobileMenuLinks">Agnosticism</a></Link>
-            <Link href="/philosophies/islam/"><a className="mobileMenuLinks">Islam</a></Link>
+            <Link href="/philosophies/atheism/"><a className="desktopNavLinks">Atheism</a></Link>
+            <Link href="/philosophies/agnosticism/"><a className="desktopNavLinks">Agnosticism</a></Link>
+            <Link href="/philosophies/islam/"><a className="desktopNavLinks">Islam</a></Link>
             <hr />
-            <Link href="/philosophies/"><a className="mobileMenuLinks">All Philosophies</a></Link>
+            <Link href="/philosophies/"><a className="desktopNavLinks">All Philosophies</a></Link>
           </div>
         </div>
       </div>
