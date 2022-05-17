@@ -13,34 +13,6 @@ export default function Home() {
   const [question, setQuestion] = useState(questions.whatAreYourViewsOnGod);
   const [typeOfPage, setTypeOfPage] = useState("Question");
   const [explanation, setExplanation] = useState(explanations.cosmological_argument);
-  const [navText, setNavText] = useState("Atheism");
-  const [time, setTime] = useState(0);
-  const timer = useRef();
-
-  function changeNavText(){
-    if (time % 5 == 0){
-      if (navText == "Atheism"){
-        setNavText("Agnosticism")
-      }
-      else if (navText == "Agnosticism"){
-        setNavText("Islam")
-      }
-      else if (navText == "Islam"){
-        setNavText("Spiritualism")
-      }
-      else{
-        setNavText("Atheism")
-      }
-    }
-  }
-
-  useEffect(() => {
-    timer.current = setInterval(() => setTime((t) => time + 1), 1000);
-    changeNavText();
-    return () => {
-      clearInterval(timer.current)
-    }
-  }, [])
 
   // Displays the next question or content. 
   function QuestionOrContentHandler(response){
