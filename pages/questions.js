@@ -1,4 +1,4 @@
-var whatAreYourViewsOnGod = {"question": "What are your views on god?", 
+var whatAreYourViewsOnGod = {"question": "What are your views on God?", 
 "answers": ["There is only one.", "There is none.", "There is more than one.", "I don't know."]}
 var didTheUniverseHaveABeginning = {"question": "Did the Universe have a beginning?",
 "answers": ["Yes.", "No.", "I don't know."]}
