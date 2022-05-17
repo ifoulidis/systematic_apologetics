@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
-import * as questions from './components/questions';
-import * as explanations from './components/explanations';
-import {GetResponse} from './components/logicmap';
-import {NavigationBar} from './components/navbar.js';
+import * as questions from '../components/questions';
+import * as explanations from '../components/explanations';
+import {GetResponse} from '../components/logicmap';
+import {NavigationBar} from '../components/navbar.js';
 import {Link} from 'next/link'
 
 
