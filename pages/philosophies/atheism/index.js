@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import {NavigationBar} from '../../navbar';
+import {NavigationBar} from '../../components/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
 
