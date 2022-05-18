@@ -1,10 +1,14 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
 import * as questions from '../components/questions';
 import * as explanations from '../components/explanations';
 import {GetResponse} from '../components/logicmap';
 import {NavigationBar} from '../components/navbar.js';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+
 
 
 export default function Home() {
@@ -12,16 +16,28 @@ export default function Home() {
   const [question, setQuestion] = useState(questions.whatAreYourViewsOnGod);
   const [typeOfPage, setTypeOfPage] = useState("Question");
   const [explanation, setExplanation] = useState(explanations.cosmological_argument);
+  const router = useRouter()
+
+  function ButtonsForUser(){
+    return(
+      <div className="quizNavigation">
+        <div className = "quiz-nav-button-container">
+          <button className = "quiz-nav-button" onClick={() => {
+              router.reload(window.location.pathname)}}>
+                  Reset
+          </button>
+        </div>
+      </div>
+    )
+  }
 
   // Displays the next question or content. 
   function QuestionOrContentHandler(response){
     if (typeof(response) == 'object'){
       setTypeOfPage("Question")
       setQuestion(response);
-      console.log("obj")
     }
     else{
-      console.log(response)
       setExplanation(response)
       setTypeOfPage("Content")
     }
@@ -42,12 +58,12 @@ export default function Home() {
         <h3 id="question">{question["question"]}</h3>
         <div className="d-grid gap-2">
           {question["answers"].map(answer =>
-            <Button key = {answer} variant="outline-primary" id="question-button" onClick={() => {
+            <button key = {answer} className="question-button" onClick={() => {
               let QAObject = {"question": question["question"], "answer": answer};
               let response = GetResponse(QAObject);
               QuestionOrContentHandler(response)}}>
                 {answer}
-            </Button>
+            </button>
           )}
         </div>
       </div>
@@ -69,6 +85,7 @@ export default function Home() {
     <div className="App">
       <NavigationBar/>
       <DisplayQuestionOrContent/>
+      <ButtonsForUser/>
     </div>
   );
 

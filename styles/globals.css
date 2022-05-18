@@ -22,13 +22,13 @@ body {
 /* Styles for the navbar. */
 
 #menuIconB{
-  background-color: lightgray;
+  background-color: white;
   border-radius: 0.3em;
 }
 
 .menuIconDiv {
-  width: 1.3em;
-  height: 0.17em;
+  width: 1em;
+  height: 0.2em;
   background-color: black;
   margin: 0.2em 0;
 }
@@ -96,7 +96,7 @@ nav {
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  opacity: 0.8;
+  opacity: 0.9;
   border-bottom-left-radius: 0.7em;
   border-bottom-right-radius: 0.7em;
 }
@@ -111,7 +111,7 @@ nav {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: lightslategray;
+  background-color: rgb(51, 56, 85);
   color: white;
 }
 
@@ -136,10 +136,28 @@ nav {
   text-align: center;
 }
 
-#question-button{
+.question-button{
   padding: 1em;
   width: auto;
+  border-color:black;
+  border-radius: 0.2em;
+  border-width: 0.14em;
+  color:white;
+  background-color: lightslategrey;
 }
+
+.quiz-nav-button-container{
+  padding:1em;
+}
+
+.quiz-nav-button{
+  background-color: cadetblue;
+  border-color: lightslategray;
+  border-width: 0.14em;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+
 /* ##################### */
 /* Styles for displaying explanations in a quiz. */
 
@@ -154,6 +172,13 @@ nav {
 * {
   box-sizing: border-box;
 }
+
+.quizNavigation{
+  display: flex;
+  padding-top: 2em;
+  justify-content: center;
+}
+
 
 @media screen and (max-width: 480px) {
   .QuestionContainer{

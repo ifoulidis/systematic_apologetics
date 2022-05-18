@@ -2,82 +2,63 @@ import * as questions from './questions';
 import * as explanations from './explanations'
 
 export function GetResponse(s){
+    const SO = s
 
-    const selectionObj = s
-
-    if (selectionObj.question === "What are your views on god?"){
-        switch (selectionObj.answer){
+    if (SO.question === "Did the Universe have a beginning?"){
+        if (SO.answer === "Yes."){
+            return explanations.cosmological_argument}
+        else if (SO.answer === "No."){
+            return explanations.infinite_regress}
+        else if (SO.answer === "I don't know."){
+            return explanations.infinite_regress}
+    }
+    else if (SO.question === "What are your views on God?"){
+        switch (SO.answer){
             case "There is only one.":
-                //This actually displays pantheistic religions too atm. May change, but some pantheists are dumb.
-                return questions.whatIsYourReligion
+                return questions.whatIsYourReligion;
             case "There is none.":
-                return questions.didTheUniverseHaveABeginning
+                return questions.didTheUniverseHaveABeginning;
             case "There is more than one.":
-                return questions.uncreatedGod
+                return questions.uncreatedGod;
             case "I don't know.":
-                return questions.didTheUniverseHaveABeginning
-            default:
-                return questions.didTheUniverseHaveABeginning
+                return explanations.cosmological_argument;
         }
     }
-    else if (selectionObj.question === "Did the Universe have a beginning?"){
-        switch (selectionObj.answer){
-            case "Yes.":
-                //This actually displays pantheistic religions too atm. May change, but some pantheists are dumb.
-                return explanations.cosmological_argument
-            case "No.":
-                return explanations.infinite_regress
-            case "I don't Know.":
-                return explanations.infinite_regress
-            default:
-                return explanations.cosmological_argument
-        }
+    else if (SO.question === "What is your religion?"){
+        if (SO.answer === "Christianity"){
+            console.log("Christianity matched")
+            return explanations.ChristianityEx}
+        else if (SO.answer === "Catholicism"){
+            return explanations.placeholder}
+        else if (SO.answer ===  "Islam"){
+            return explanations.islamEx}
+        else if (SO.answer ===  "Buddhism"){
+            return explanations.placeholder}
+        else if (SO.answer ===  "Hinduism"){
+            return explanations.placeholder}
+        else if (SO.answer ===  "Judaism"){
+            return explanations.placeholder}
+        else if (SO.answer ===  "I don't belong to a religion."){
+            return explanations.placeholder}
     }
-    else if (selectionObj.question === "What is your religion?"){
-        switch (selectionObj.answer){
-            case "Christianity":
-                console.log("Christianity matched")
-                explanations.placeholder
-            case "Catholicism":
-                explanations.placeholder
-            case "Islam":
-                explanations.placeholder
-            case "Buddhism":
-                explanations.placeholder
-            case "Hinduism":
-                explanations.placeholder
-            case "Judaism":
-                explanations.placeholder
-            case "I don't belong to a religion.":
-                explanations.placeholder
-        }
-    }
-    else if (selectionObj.question === "Do you believe in an uncreated god?"){
-        switch (selectionObj.answer){
-            case "Yes.":
-                //This actually displays pantheistic religions too atm. May change, but some pantheists are dumb.
-                return questions.whatIsYourReligion
-            case "No.":
-                return questions.didTheUniverseHaveABeginning
-            case "I don't Know.":
-                return questions.didTheUniverseHaveABeginning
-            default:
-                return questions.whatIsYourReligion
-        }
+    else if (SO.question === "Do you believe in an uncreated god?"){
+        if (SO.answer === "Yes."){
+            //This actually displays pantheistic religions too atm. May change, but some pantheists are dumb.
+            return questions.whatIsYourReligion}
+        else if (SO.answer === "No."){
+            return questions.didTheUniverseHaveABeginning}
+        else if (SO.answer === "I don't know."){
+            return questions.didTheUniverseHaveABeginning}
     }      
-    else if (selectionObj.question === "Do you think God cares about us?"){
-        if (selectionObj.answer === "Yes."){
-            //Placeholder
-            return explanations.placeholder
+    else if (SO.question === "Do you think God cares about us?"){
+        if (SO.answer === "Yes."){
+            return explanations.cosmological_argument
         }
-        else if (selectionObj.answer === "No."){
-            return explanations.placeholder
+        else if (SO.answer === "No."){
+            return explanations.infinite_regress
         }
-        else if (selectionObj.answer === "I'm not sure."){
-            return explanations.placeholder
-      } 
-    }
-    else{
-        return explanations.placeholder
+        else if (SO.answer === "I'm not sure."){
+            return explanations.e3
+        } 
     }
 }
