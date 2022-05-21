@@ -151,8 +151,10 @@ nav {
 }
 
 .quiz-nav-button{
-  background-color: cadetblue;
-  border-color: lightslategray;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border-color: black;
   border-width: 0.14em;
   border-radius: 0.2em;
   padding: 0.5em;
@@ -179,7 +181,9 @@ nav {
   justify-content: center;
 }
 
-
+/* ##################### */
+/* ##################### */
+/* ##################### */
 @media screen and (max-width: 480px) {
   .QuestionContainer{
     padding-left: 3%;

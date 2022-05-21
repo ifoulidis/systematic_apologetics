@@ -8,7 +8,8 @@ export default function IslamHome(){
     return(
         <div className="App">
             <NavigationBar/>
-            <h3>Muhummad was a pedophile.</h3>
+            <p>Islam teaches that you must have no doubts, but how can you have faith if you have not yet been completely convinced that it is the truth?</p>
+            <p>Consider this part of your search for truth, and I must begin with unfortunate news for you. You have been deceived, and you have likely helped to deceive yourself</p>
         </div>
     );
 }
