@@ -19,7 +19,7 @@ export function GetResponse(s){
             case "There is none.":
                 return questions.didTheUniverseHaveABeginning;
             case "There is more than one.":
-                return questions.uncreatedGod;
+                return questions.didTheUniverseHaveABeginning;
             case "I don't know.":
                 return explanations.cosmological_argument;
         }
@@ -60,5 +60,8 @@ export function GetResponse(s){
         else if (SO.answer === "I'm not sure."){
             return explanations.e3
         } 
+    }
+    else if (SO === 'Does God Care?'){
+        return questions.doesGodCare
     }
 }
