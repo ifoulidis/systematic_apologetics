@@ -9,7 +9,7 @@ export default function AtheismHome(){
         <div className="App">
             <NavigationBar/>
             <div className="MainContentContainer">
-                <h3>Atheism</h3>
+                <h4 className="articleTitle">Atheism</h4>
                 <p>Atheism is the belief that there is no supreme God, and many atheists also believe that there is
                     nothing supernatural at all. If you believe that there may be a God, but you are not sure or think
                     that nobody knows, you should visit the <Link href="./agnosticism/">agnosticism page</Link>.

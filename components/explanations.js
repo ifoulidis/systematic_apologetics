@@ -29,7 +29,7 @@ export function infinite_regress(){
             <p>The Universe is ruled by time in a sense&ndash;it changes with time. Because of this, the Universe cannot have always existed. There cannot have been an infinite amount of time in the past, as that does not make sense. If there were infinite moments before this moment, we would never have reached the current one. Hence, nothing bound by time has not always existed.</p>
             <p>The appropriate follow-up question is: how can time and the Universe have begun then? Both exist now, clearly, but they cannot have always existed.</p>
             <p>Whatever created time must be able to exist in its absence. If this is news to you, alarm bells should be rining in your head: "Was I wrong about everything?" The answer is probably yes, but I promise you that this means better news than you could ever hope for.</p>
-            <p>Right now, all I have proved is that an entity which is outside of time and space exists. You may have already thought ahead and drawn other conclusions from that information. If you have, I suggest <Link href="/philosophies/Christianity/comparing_religions"><a>Comparing Religions</a></Link>. If you have not, allow me to recommend the following.</p>
+            <p>Right now, all I have proved is that an entity which is outside of time and space exists. You may have already thought ahead and drawn other conclusions from that information. If you have, I suggest <Link href="/philosophies/christianity/comparing_religions"><a>Comparing Religions</a></Link>. If you have not, allow me to recommend the following.</p>
             <div>
                 <p>Why the Creator must have free will.</p>
                 <p>Why our reason must have a supernatural source</p>

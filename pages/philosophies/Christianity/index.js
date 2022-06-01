@@ -1,15 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
 import {NavigationBar} from '../../../components/navbar';
 
-export default function AgnosticismHome(){
+export default function ChristianityHome(){
     return(
         <div className="App">
             <NavigationBar/>
             <div className="MainContentContainer">
-                <h4 className="articleTitle">Agnosticism</h4>
+                <h4 className="articleTitle">Christianity</h4>
             </div>
         </div>
     );

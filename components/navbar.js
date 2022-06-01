@@ -11,7 +11,7 @@ export function NavigationBar(){
     <nav>
       <div className='desktopNav'>
         <div className="siteName">
-          <Link href="/" ><a className="desktopNavLinks">Systematic Philosophy</a></Link>
+          <Link href="/" ><a className="desktopNavLinks">What Is Truth?</a></Link>
         </div>
         <div className="dropdown">
           <button className="dropbtn">Quizes</button>
@@ -28,9 +28,10 @@ export function NavigationBar(){
           <div className="dropdown-content">
             <Link href="/philosophies/atheism/"><a className="desktopNavLinks">Atheism</a></Link>
             <Link href="/philosophies/agnosticism/"><a className="desktopNavLinks">Agnosticism</a></Link>
+            <Link href="/philosophies/christianity/"><a className="desktopNavLinks">Christianity</a></Link>
             <Link href="/philosophies/islam/"><a className="desktopNavLinks">Islam</a></Link>
             <hr />
-            <Link href="/philosophies/"><a className="desktopNavLinks">All Philosophies</a></Link>
+            <Link href="/philosophies/"><a className="desktopNavLinks">See All</a></Link>
           </div>
         </div>
       </div>
@@ -50,9 +51,10 @@ export function NavigationBar(){
             <h3><Link href="#"><a className="mobileMenuLinks">The Origin of Life</a></Link></h3>
             <h3><Link href="#"><a className="mobileMenuLinks">Something Else</a></Link></h3>
             <hr/>
-            <h2><Link href="/philosophies/"><a className="mobileMenuLinks">Philosophies</a></Link></h2>
+            <h2><Link href="/philosophies/"><a className="mobileMenuLinks">Beliefs</a></Link></h2>
             <h3><Link href="/philosophies/atheism/"><a className="mobileMenuLinks">Atheism</a></Link></h3>
             <h3><Link href="/philosophies/agnosticism/"><a className="mobileMenuLinks">Agnosticism</a></Link></h3>
+            <h3><Link href="/philosophies/christianity/"><a className="mobileMenuLinks">Christianity</a></Link></h3>
             <h3><Link href="/philosophies/islam/"><a className="mobileMenuLinks">Islam</a></Link></h3>
           </Offcanvas.Body>
         </Offcanvas>
