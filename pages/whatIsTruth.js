@@ -18,7 +18,7 @@ export default function WhatIsTruth(){
         <p>Try reading <Link href="./philosophies/christianity/existence_of_god">The Existence of God</Link>.</p>
         <p><Link href="./philosophies/agnosticism/reality_illusion">Is Reality An Illusion?</Link>.</p>
         <br/>
-        <div class="iframeVideo">
+        <div className="iframeVideo">
           <iframe src="https://www.youtube.com/embed/16PryJonegA" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <br/><br/>
