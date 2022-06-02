@@ -29,7 +29,7 @@ export default function AtheismHome(){
                 </p>
                 <br/>
                 <div className="iframeVideo">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DakEcY7Z5GU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DakEcY7Z5GU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <br/>
                 <p>
