@@ -19,7 +19,7 @@ export default function WhatIsTruth(){
         <p><Link href="./philosophies/agnosticism/reality_illusion">Is Reality An Illusion?</Link>.</p>
         <br/>
         <div className="iframeVideo">
-          <iframe src="https://www.youtube.com/embed/16PryJonegA" width="560" height="315" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/16PryJonegA" width="560" height="315" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
         <br/><br/>
       </div>
