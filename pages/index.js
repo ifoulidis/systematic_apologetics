@@ -7,6 +7,7 @@ import {GetResponse} from '../components/logicmap';
 import {NavigationBar} from '../components/navbar.js';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion';
 
 
 
@@ -54,7 +55,20 @@ export default function Home() {
 
   function QuestionForm(){
     return(
-      <div className="QuestionContainer">
+      // Note the special div that enables the transition.
+      <motion.div className="QuestionContainer" initial="hidden" animate="visible" variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: .2
+            }
+          }
+      }}>
         <h3 id="question">{question["question"]}</h3>
         <div className="d-grid gap-2">
           {question["answers"].map(answer =>
@@ -66,17 +80,29 @@ export default function Home() {
             </button>
           )}
         </div>
-      </div>
+      </motion.div>
     )
   }
 
   function ExplanationPage(){
     return(
-      <div>
+      <motion.div initial="hidden" animate="visible" variants={{
+          hidden: {
+            scale: 0.6,
+            opacity: 0
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: .1
+            }
+          }
+      }}>
         <div className="MainContentContainer">
           {explanation}
         </div>
-      </div>
+      </motion.div>
     )
   }
 
