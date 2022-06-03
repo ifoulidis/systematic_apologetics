@@ -16,7 +16,8 @@ export default function WhatIsTruth(){
         <p>Therefore, do not be afraid to pursue the truth, but you must keep in mind that there are many people who hate it. The very reason I felt the need to point out the fact that truth exists is because so many deny it, and we must start somewhere.</p>
         <p>Now that we have established that truth exists, more serious topics await.</p>
         <p>Try reading <Link href="./philosophies/christianity/existence_of_god">The Existence of God</Link>.</p>
-        <p><Link href="./philosophies/agnosticism/reality_illusion">Is Reality An Illusion?</Link>.</p>
+        <p><Link href="./philosophies/agnosticism/reality_illusion">Is Reality An Illusion?</Link></p>
+        <p><Link href="./philosophies/christianity/cosmological_argument">The Cosmological Argument</Link></p>
         <br/>
         <div className="iframeVideo">
           <iframe src="https://www.youtube.com/embed/16PryJonegA" width="560" height="315" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 import {NavigationBar} from '../../../components/navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
 
 export default function CosmologicalArgument(){
   return(
@@ -21,8 +19,8 @@ export default function CosmologicalArgument(){
         <p>Perhaps you believe that chance is the answer, but an example should clear this up: if you have no connection to any betting agency and have placed no bets on horses, what chance do you have of winning millions of dollars on horse racing today anyway? None. Likewise, chance could not have made the Universe pop into existence from nothing. If there was nothing, there was no power to act, and therefore nothing for chance to describe. The point is that chance only describes the likelihood of one thing causing another; it is not a cause itself.</p>
         <p>Now, since there are things in existence rather than nothing, something has always existed. (Note than even a so-called illusion could not actually be merely an illusion if there were nothing else&ndash;it would be reality.) Again, there could never have been nothing, or nothing would have ever come to exist. This reasoning does not only apply to our universe, but to any number of universes and supernatural entities. Something must have never begun to exist yet does exist.</p>
         <p>Since this entity has always existed, it must be able to exist outside of time&ndash;but when things subject to time were created, time began. This occasion could aptly be called The Beginning. Further, this entity must have chosen to act, since if it did not have a rational nature, it could not have created something so consistent and logical and brilliant as the Universe; nor would there be any reason for our universe being sustained in existence and not colliding with countless other universes at any given moment. Indeed, the conclusion is that there is a God.</p>
-        <p>If you would like to read another strong argument, please see <Link href="./argument_from_reason"></Link></p>
-        <p>If you would like to move on and consider how we might learn about God, see <Link href="./comparing_religions"></Link></p>
+        <p>If you would like to read another strong argument, please see <Link href="./argument_from_reason">The Argument from Reason</Link>.</p>
+        <p>If you would like to move on and consider how we might learn about God, see <Link href="./comparing_religions">Comparing Religions</Link>.</p>
         <br/><br/>
       </div>
     </div>

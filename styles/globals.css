@@ -8,7 +8,8 @@ body {
 
 .mobileMenuLinks{
   text-decoration: none;
-  color: cadetblue;
+  color: rgb(49, 153, 194);
+  font-weight: 400;
   font-family: Garamond, sans-serif;
 }
 
@@ -35,7 +36,8 @@ body {
 
 .mmContent{
   text-align: center;
-  color: cadetblue;
+  color: black;
+  font-weight: 300;
 }
 
 .mobileMenu{
@@ -125,6 +127,33 @@ nav {
 }
 
 /* ##################### */
+/* Styles for Articles landing page. */
+
+.grid-container {
+  display: grid;
+  margin: 1.5rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.articleGrid{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 1em;
+
+  border: none;
+  border-radius: 0.2em;
+  background-color: white;
+}
+
+.cardT{
+  color: rgb(49, 153, 194);
+  text-align: center;
+  font-weight: 500;
+  font-family: Garamond, sans-serif;
+}
+
+/* ##################### */
 /* Styles for displaying questions in a quiz. */
 
 .QuestionContainer{
@@ -197,6 +226,34 @@ iframe[src*=youtube] {
   padding-bottom: 10px;
 }
 
+/* Styles for images in the OffCanvas */
+
+.menuImage {
+  height: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+#UniverseMenuI{
+  background-image: url("../public/Space1.jpg");
+}
+#ReligionsMenuI{
+  background-image: url("../public/Chistianity_Hinduism_Islam.png");
+}
+.menuCard{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 0.2em;
+  background-color: white;
+}
+
+
+/* ##################### */
+/* ##################### */
+/* ##################### */
 @media screen and (max-width: 1280px) {
   .MainContentContainer {
     padding-top: 7%;
@@ -207,6 +264,8 @@ iframe[src*=youtube] {
   .dropdown-content {
     min-width: 150%;
   }
+
+  .grid-container { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ##################### */
@@ -233,4 +292,5 @@ iframe[src*=youtube] {
   .mobileMenu{
     display:flex;
   }
+  .grid-container { grid-template-columns: repeat(1, 1fr); }
 }

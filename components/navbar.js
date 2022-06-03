@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Offcanvas} from 'react-bootstrap';
-import Link from 'next/link'
+import {Offcanvas, Card} from 'react-bootstrap';
+import Link from 'next/link';
+import Image from 'next/image';
+import Earth from '../public/Earth.jpg';
 
 export function NavigationBar(){
   const [show, setShow] = useState(false);
@@ -25,16 +27,9 @@ export function NavigationBar(){
           </div>
         </div>
         <div className="dropdown">
-          <button className="dropbtn">Topics</button>
-          <div className="dropdown-content">
-            <Link href="/philosophies/atheism/"><a className="desktopNavLinks">Atheism</a></Link>
-            <Link href="/philosophies/agnosticism/reality_illusion"><a className="desktopNavLinks">Agnosticism</a></Link>
-            <Link href="/philosophies/christianity/comparing_religions"><a className="desktopNavLinks">Comparing Religions</a></Link>
-            <Link href="/philosophies/christianity/"><a className="desktopNavLinks">Christianity</a></Link>
-            <Link href="/philosophies/islam/"><a className="desktopNavLinks">Islam</a></Link>
-            <hr />
-            <Link href="/philosophies/"><a className="desktopNavLinks">See All</a></Link>
-          </div>
+          <button onClick={handleShow} className="dropbtn">
+            Topics
+          </button>
         </div>
       </div>
       <div className='mobileMenu'>
@@ -46,19 +41,21 @@ export function NavigationBar(){
             <Offcanvas.Title></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className='mmContent'>
-            <h2 ><Link href="/"><a className="mobileMenuLinks">Home</a></Link></h2>
-            <hr/>
-            <h2><Link  href="#"><a className="mobileMenuLinks">Quizes</a></Link></h2>   
-            <h3><Link href="/"><a className="mobileMenuLinks">Main Quiz</a></Link></h3>          
-            <h3><Link href="#"><a className="mobileMenuLinks">Evolution</a></Link></h3>
-            <h3><Link href="#"><a className="mobileMenuLinks">The Origin of Life</a></Link></h3>
-            <h3><Link href="#"><a className="mobileMenuLinks">Something Else</a></Link></h3>
-            <hr/>
-            <h2><Link href="/philosophies/"><a className="mobileMenuLinks">Articles</a></Link></h2>
-            <h3><Link href="/philosophies/atheism/"><a className="mobileMenuLinks">Atheism</a></Link></h3>
-            <h3><Link href="/philosophies/agnosticism/"><a className="mobileMenuLinks">Agnosticism</a></Link></h3>
-            <h3><Link href="/philosophies/christianity/"><a className="mobileMenuLinks">Christianity</a></Link></h3>
-            <h3><Link href="/philosophies/islam/"><a className="mobileMenuLinks">Islam</a></Link></h3>
+            <h1><Link href="/articles/"><a className="mobileMenuLinks">Articles</a></Link></h1>
+            <Link href="/nature/"><button className="menuCard" onClick={handleClose}>
+              <h4 className="mobileMenuLinks">Nature</h4>
+              <div className="menuImage" id="UniverseMenuI"></div>
+              <p>Was There a Beginning? Is Reality an Illusion? What Caused the Big Bang?</p>
+            </button></Link>
+            <Link href="/God/"><button className="menuCard" onClick={handleClose}>
+              <h4 className="mobileMenuLinks">God</h4>
+              <p>The Design Argument &#183; The Argument from Reason &#183; The Cosmological Argument &#183; Miracles</p>
+            </button></Link>
+            <Link href="/Religions/"><button className="menuCard" onClick={handleClose}>
+              <h4 className="mobileMenuLinks">Religions</h4>
+              <div className="menuImage" id="ReligionsMenuI"></div>
+              <p>Agnosticism &#183; Atheism &#183; Christianity &#183; Islam &#183; Hunduism &#183; Buddhism</p>
+            </button></Link>
           </Offcanvas.Body>
         </Offcanvas>
       </div>
