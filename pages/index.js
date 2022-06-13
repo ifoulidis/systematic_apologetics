@@ -72,12 +72,17 @@ export default function Home() {
         <h3 id="question">{question["question"]}</h3>
         <div className="d-grid gap-2">
           {question["answers"].map(answer =>
-            <button key = {answer} className="question-button" onClick={() => {
+            <motion.button key = {answer} className="question-button"
+            onClick={() => {
               let QAObject = {"question": question["question"], "answer": answer};
               let response = GetResponse(QAObject);
-              QuestionOrContentHandler(response)}}>
+              QuestionOrContentHandler(response)}}
+            whileHover={{
+              scale: 1.2,
+              duration: 0.2
+            }}>
                 {answer}
-            </button>
+            </motion.button>
           )}
         </div>
       </motion.div>

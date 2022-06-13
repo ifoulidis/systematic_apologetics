@@ -8,6 +8,8 @@ import GetResponse from './logicmap';
 export function cosmological_argument(){
     return(
         <div>
+            <h1 className="eTitle">The Universe Must Have Had a Cause</h1>
+            <br/>
             <p>(1) Whatever begins to exist has a cause;</p>
             <p>(2) The Universe began to exist;</p>
             <p>(3) Therefore, the Universe has a cause.</p>
@@ -26,6 +28,8 @@ export function cosmological_argument(){
 export function infinite_regress(){
     return(
         <div>
+            <h1 className="eTitle">The Past Cannot Have Been Infinite</h1>
+            <br/>
             <p>The Universe is ruled by time in a sense&ndash;it changes with time. Because of this, the Universe cannot have always existed. There cannot have been an infinite amount of time in the past, as that does not make sense. If there were infinite moments before this moment, we would never have reached the current one. Hence, nothing bound by time has not always existed.</p>
             <p>The appropriate follow-up question is: how can time and the Universe have begun then? Both exist now, clearly, but they cannot have always existed.</p>
             <p>Whatever created time must be able to exist in its absence. If this is news to you, alarm bells should be rining in your head: "Was I wrong about everything?" The answer is probably yes, but I promise you that this means better news than you could ever hope for.</p>
@@ -59,8 +63,13 @@ export function e3(){
 export function atheismEx(){
     return(
         <div>
-            <p>Atheism.</p>
-            <Link href="/philosophies/atheism/"><a>Atheism</a></Link>
+            <h1 className="eTitle">Atheism Does Not Make Sense</h1>
+            <br/>
+            <p>No matter how many scientsts profess to be atheists, no matter how many people claim that the idea of a God is baseless, and no matter how many times the word evidence is flung around: atheism still will not make sense.</p>
+            <p>There are reasons that show atheism to be impossible, and reasons that show it to be completely unreasonable.</p>
+            <p>First, there is the problem of infinite regress being impossible. See ... </p>
+            <p>Second, there is the </p>
+            <Link href="/philosophies/atheism/"><a></a></Link>
         </div>
     )
 }
