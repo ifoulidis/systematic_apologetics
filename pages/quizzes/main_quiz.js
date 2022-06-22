@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 
 
-export default function mainQuiz() {
+export default function MainQuiz() {
   // Stores the question object to display the appropriate question and answers.
   const [question, setQuestion] = useState(questions.whatAreYourViewsOnGod);
   const [typeOfPage, setTypeOfPage] = useState("Question");
