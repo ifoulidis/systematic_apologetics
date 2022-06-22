@@ -13,12 +13,12 @@ export function NavigationBar(){
     <nav>
       <div className='desktopNav'>
         <div className="siteName">
-          <Link href="/whatIsTruth" ><a className="desktopNavLinks">What Is Truth?</a></Link>
+          <Link href="/" ><a className="desktopNavLinks">Home</a></Link>
         </div>
         <div className="dropdown">
           <button className="dropbtn">Quizes</button>
           <div className="dropdown-content">
-            <Link href="/"><a className="desktopNavLinks">Main Quiz</a></Link>
+            <Link href="/quizzes/main_quiz"><a className="desktopNavLinks">Main Quiz</a></Link>
             <Link href="/philosophies/atheism/"><a className="desktopNavLinks">Evolution</a></Link>
             <Link href="/philosophies/agnosticism/"><a className="desktopNavLinks">The Origin of Life</a></Link>
             <Link href="/philosophies/islam/"><a className="desktopNavLinks">Something Else</a></Link>
@@ -28,7 +28,7 @@ export function NavigationBar(){
         </div>
         <div className="dropdown">
           <button onClick={handleShow} className="dropbtn">
-            Topics
+            Arguments
           </button>
         </div>
       </div>

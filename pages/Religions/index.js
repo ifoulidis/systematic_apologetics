@@ -10,7 +10,7 @@ export default function ReligionsArticles(){
       <div className="grid-container">
         <Link href="../philosophies/christianity/cosmological_argument"><button className="articleGrid">
           <h4 className="cardT">Christianity</h4>
-          <p>Was Jesus Real? &bull; Are Christians Meant to Have Blind Faith? &bull; What Is the Evidence for Christianity?</p>
+          <p>Is Jesus a Real Historical Figure? &bull; Are Christians Meant to Have Blind Faith? &bull; What Is the Evidence for Christianity?</p>
         </button></Link>
         <Link href="/"><div className="articleGrid">
           <h4 className="cardT">Atheism</h4>

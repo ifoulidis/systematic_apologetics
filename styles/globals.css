@@ -15,7 +15,7 @@ body {
 
 .desktopNavLinks{
   text-decoration: none;
-  color: cadetblue;
+  color: white;
   font-family: 'Literata', Garamond;
 }
 
@@ -23,14 +23,15 @@ body {
 /* Styles for the navbar. */
 
 #menuIconB{
-  background-color: white;
+  background-color: gold;
   border-radius: 0.3em;
+  border-color: aliceblue;
 }
 
 .menuIconDiv {
   width: 1em;
   height: 0.2em;
-  background-color: black;
+  background-color: white;
   margin: 0.2em 0;
 }
 
@@ -49,8 +50,8 @@ nav {
   margin: 0px;
   font-size: 1.3em;
   padding: 0.7em;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .desktopNav{
@@ -60,11 +61,11 @@ nav {
 
 .desktopNav a:link {
   text-decoration: none;
-  color: lightgrey;
+  color: black;
 }
 
 .desktopNav a:visited {
-  color: lightgrey;
+  color: black;
   text-decoration: none;
 }
 
@@ -72,10 +73,10 @@ nav {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: inherit;
+  background-color: white;
   font-family: 'Literata', Garamond;
   font-style: bold;
-  color: lightgrey;
+  color: black;
   padding: 0px;
   font-size: inherit;
   border: none;
@@ -96,7 +97,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: white;
   min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -134,7 +135,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.articleGrid{
+.articleGrid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 1em;
@@ -147,6 +148,7 @@ nav {
   color: rgb(49, 153, 194);
   text-align: center;
   font-weight: 500;
+  font-size: 1.5em;
   font-family: 'Literata', Garamond;
 }
 
@@ -236,7 +238,6 @@ iframe[src*=youtube] {
 /* Styles for images in the OffCanvas */
 
 .menuImage {
-  height: 110px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -302,5 +303,8 @@ iframe[src*=youtube] {
   .mobileMenu{
     display:flex;
   }
-  .grid-container { grid-template-columns: repeat(1, 1fr); }
+  .grid-container { 
+    grid-template-columns: repeat(1, 1fr); 
+    padding: 5%;
+  }
 }
