@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as questions from '../components/questions';
-import * as explanations from '../components/explanations';
-import {GetResponse} from '../components/logicmap';
 import {NavigationBar} from '../components/navbar.js';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -11,7 +8,12 @@ import Image from 'next/image'
 import styles from "../styles/Home.module.css";
 import Truth from '../public/truth.jpg'
 import Darwin from '../public/darwin.jpg'
-import IslamImage from '../public/islam_symbol.jpg'
+import IslamImage from '../public/islam_symbol.png'
+import EarthImage from '../public/Earth.jpg'
+import SpaceImage from '../public/Space1.jpg'
+import MatrixImage from '../public/matrix.jpg'
+import Card from '../components/Card'
+
 
 
 function Q1() {
@@ -82,15 +84,6 @@ function QuizAd(quizq) {
 )
 }
 
-function Card(link, title, description, image) {
-    return (
-    <Link href={link}><motion.button className="articleGrid">
-      <Image src={image} layout='intrinsic'/>
-      <h4 className="cardT">{title}</h4>
-      {description}
-    </motion.button></Link>
-  )
-}
 
 
 export default function Home() {
@@ -128,16 +121,19 @@ export default function Home() {
     <div className='App'>
       <NavigationBar/>
       <div
-      style={{display:'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '3%', paddingBottom:'10%'}} >
+      style={{display:'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '3%', paddingBottom:'5%'}} >
         {quest}
       </div>
-      <div style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <h2 className='eTitle'>Articles</h2>
-      </div>
       <div className="grid-container">
-        {Card('./whatIsTruth', 'What Is Truth?', <p>Can we really know the truth about anything? Is truth relative? Can I have my own truth?</p>, Truth)}
-        {Card('./philosophies/atheism/', 'Atheism', <p>Forms of atheism &bull; Is it possible to disprove a creator? &bull; A modern belief?</p>, Darwin)}
-        {Card('./philosophies/islam/', 'Islam', <p>Is Islam internally consistent? Does Islam reasonably explain creation?</p>, IslamImage)}
+        {Card('./whatIsTruth', 'What Is Truth?', <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)}
+        {Card('./philosophies/atheism/', 'Atheism', <p>Forms of Atheism &bull; Is It Possible to Disprove a Creator? &bull; A Modern Belief?</p>, Darwin)}
+        {Card('./philosophies/islam/', 'Islam', <p>Is Islam Internally Consistent? &bull; How Does It Explain Morality? &bull; Does Its Creation Account Make Sense?</p>, IslamImage)}
+        {Card('./philosophies/agnosticism/reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
+        {Card('./philosophies/christianity/cosmological_argument', 'The Cosmological Argument', <p>Everything Impermanent Must Be Created &bull; Can God Answer the Problem of the First Cause?</p>, EarthImage)}
+        {Card('./philosophies/christianity/existence_of_god', 'The Existence of God', <p>A Very Quick Summary of the Main Arguments for and Against</p>, SpaceImage)}
+      </div>
+      <div className='Footer'>
+
       </div>
     </div>
   );

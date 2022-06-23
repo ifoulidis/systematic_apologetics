@@ -1,0 +1,10 @@
+Naming system:
+
+Components:
+  Begin with a capital letter and use camelcase.
+
+Files:
+  Use underscores and entirely lowercase.
+
+className:
+  camelcase.

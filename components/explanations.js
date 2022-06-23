@@ -65,10 +65,8 @@ export function atheismEx(){
         <div>
             <h1 className="eTitle">Atheism Does Not Make Sense</h1>
             <br/>
-            <p>No matter how many scientsts profess to be atheists, no matter how many people claim that the idea of a God is baseless, and no matter how many times the word evidence is flung around: atheism still will not make sense.</p>
-            <p>There are reasons that show atheism to be impossible, and reasons that show it to be completely unreasonable.</p>
-            <p>First, there is the problem of infinite regress being impossible. See ... </p>
-            <p>Second, there is the </p>
+            <p>No matter how many scientsts profess to be atheists, no matter how many people claim that the idea of a God is baseless, and no matter how many times the word evidence is flung around: atheism will still be a false belief.</p>
+            <p>There is very good evidence for the existence of God, and there are a number of arguments which prove His existence also.</p>
             <Link href="/philosophies/atheism/"><a></a></Link>
         </div>
     )

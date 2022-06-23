@@ -125,12 +125,21 @@ nav {
   display: block;
 }
 
+.articleLinks{
+  text-decoration: none;
+  color: rgb(0, 191, 255);
+}
+
+
 /* ##################### */
 /* Styles for Articles landing page. */
 
 .grid-container {
   display: grid;
-  margin: 1.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -141,6 +150,7 @@ nav {
   padding: 1em;
   border: none;
   border-radius: 0.2em;
+  font-size: 1.2em;
   background-color: white;
 }
 
@@ -275,7 +285,8 @@ iframe[src*=youtube] {
 
   .grid-container { 
     grid-template-columns: repeat(2, 1fr); 
-    padding:5%
+    padding:5%;
+
   }
 }
 
@@ -305,6 +316,13 @@ iframe[src*=youtube] {
   }
   .grid-container { 
     grid-template-columns: repeat(1, 1fr); 
-    padding: 5%;
+    padding: 2%;
+    margin:none;
+  }
+  .articleGrid{
+    font-size: 1em;
+  }
+  .cardT{
+    font-size: 1em;
   }
 }

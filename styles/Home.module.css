@@ -49,12 +49,19 @@
 }
 
 @media (max-width: 1280) {
-
+  .quizQuestionBox{
+    width:80vw;
+    height:45vw;
+  }
 }
 
 @media (max-width: 480px) {
   .quizBanner {
     padding-left: 0%;
      padding-right: 0%;
+  }
+  .quizQuestionBox{
+    width:100%;
+    height:56.25vw;
   }
 }
