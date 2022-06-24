@@ -12,6 +12,7 @@ import IslamImage from '../public/islam_symbol.png'
 import EarthImage from '../public/Earth.jpg'
 import SpaceImage from '../public/Space1.jpg'
 import MatrixImage from '../public/matrix.jpg'
+import HourGlass1 from '../public/hourglass1.jpg'
 import Card from '../components/Card'
 
 
@@ -126,11 +127,11 @@ export default function Home() {
       </div>
       <div className="grid-container">
         {Card('./whatIsTruth', 'What Is Truth?', <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)}
-        {Card('./philosophies/atheism/', 'Atheism', <p>Forms of Atheism &bull; Is It Possible to Disprove a Creator? &bull; A Modern Belief?</p>, Darwin)}
-        {Card('./philosophies/islam/', 'Islam', <p>Is Islam Internally Consistent? &bull; How Does It Explain Morality? &bull; Does Its Creation Account Make Sense?</p>, IslamImage)}
+        {Card('./philosophies/atheism/', 'Atheism', <p>Is It Possible to Disprove God?</p>, Darwin)}
+        {Card('./philosophies/islam/', 'Islam', <p>Is Islam Internally Consistent?</p>, IslamImage)}
         {Card('./philosophies/agnosticism/reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
-        {Card('./philosophies/christianity/cosmological_argument', 'The Cosmological Argument', <p>Everything Impermanent Must Be Created &bull; Can God Answer the Problem of the First Cause?</p>, EarthImage)}
-        {Card('./philosophies/christianity/existence_of_god', 'The Existence of God', <p>A Very Quick Summary of the Main Arguments for and Against</p>, SpaceImage)}
+        {Card('./philosophies/christianity/cosmological_argument', 'The Cosmological Argument', <p>Can Cause and Effect Go on Forever?</p>, EarthImage)}
+        {Card('./philosophies/christianity/time_vs_naturalism', 'Time vs. Naturalism', <p>Can the Universe Have Always Existed?</p>, HourGlass1)}
       </div>
       <div className='Footer'>
 

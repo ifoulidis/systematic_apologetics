@@ -9,29 +9,70 @@ export function NavigationBar(){
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [show1, setShow1] = useState(false);
+  const handleClose1 = () => setShow1(false);
+  const handleShow1 = () => setShow1(true);
+  const [show2, setShow2] = useState(false);
+  const handleClose2 = () => setShow2(false);
+  const handleShow2 = () => setShow2(true);
   return(
     <nav>
       <div className='desktopNav'>
         <div className="siteName">
-          <Link href="/" ><a className="desktopNavLinks">Home</a></Link>
+          <Link href="/" ><a className="desktopNavLinks">What Is Truth</a></Link>
         </div>
         <div className="dropdown">
-          <button className="dropbtn">Quizes</button>
-          <div className="dropdown-content">
-            <Link href="/quizzes/main_quiz"><a className="desktopNavLinks">Main Quiz</a></Link>
-            <Link href="/philosophies/atheism/"><a className="desktopNavLinks">Evolution</a></Link>
-            <Link href="/philosophies/agnosticism/"><a className="desktopNavLinks">The Origin of Life</a></Link>
-            <Link href="/philosophies/islam/"><a className="desktopNavLinks">Something Else</a></Link>
-            <hr />
-            <Link href="/philosophies/"><a className="desktopNavLinks">All Quizes</a></Link>
-          </div>
+          <button className="dropbtn" onClick={handleShow1}>Quizes</button>
         </div>
         <div className="dropdown">
-          <button onClick={handleShow} className="dropbtn">
-            Arguments
-          </button>
+          <button onClick={handleShow2} className="dropbtn">Arguments</button>
         </div>
       </div>
+      {/* Quiz offcanvas. */}
+      <Offcanvas show={show1} onHide={handleClose1} placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className='mmContent'>
+          <h1><Link href="/articles/"><a className="menuLinks">All Quizzes</a></Link></h1>
+          <br/>
+          <Link href="/quizzes/main_quiz"><button className="menuCard" onClick={handleClose1}>
+            <h4 className="menuLinks">Main Quiz</h4>
+            <p>Is There A God?</p>
+          </button></Link>
+          <Link href="/God/"><button className="menuCard" onClick={handleClose1}>
+            <h4 className="menuLinks">Morality Quiz</h4>
+            <p>Is Morality Dependent on Culture?</p>
+          </button></Link>
+          <Link href="/Religions/"><button className="menuCard" onClick={handleClose1}>
+            <h4 className="menuLinks">Religions Quiz</h4>
+            <p>What Do You Know About the Six Largest Religions?</p>
+          </button></Link>
+        </Offcanvas.Body>
+      </Offcanvas>
+      {/* Article offcanvas. */}
+      <Offcanvas show={show2} onHide={handleClose2} placement='end'>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className='mmContent'>
+          <h1><Link href="/articles/"><a className="menuLinks">All Articles</a></Link></h1>
+          <br/>
+          <Link href="/nature/"><button className="menuCard" onClick={handleClose2}>
+            <h4 className="menuLinks">General</h4>
+            <p>What Is Truth? Is Reality an Illusion?</p>
+          </button></Link>
+          <Link href="/God/"><button className="menuCard" onClick={handleClose2}>
+            <h4 className="menuLinks">God</h4>
+            <p>The Major Arguments &#183; Naturalism vs. Time</p>
+          </button></Link>
+          <Link href="/Religions/"><button className="menuCard" onClick={handleClose2}>
+            <h4 className="menuLinks">Beliefs</h4>
+            <p>Agnosticism &#183; Atheism &#183; Christianity &#183; Islam &#183; Hunduism &#183; Buddhism</p>
+          </button></Link>
+        </Offcanvas.Body>
+      </Offcanvas>
+      {/* Mobile offcanvas. */}
       <div className='mobileMenu'>
         <button onClick={handleShow} id="menuIconB">
           <div className='menuIconDiv'></div><div className='menuIconDiv'></div><div className='menuIconDiv'></div>
@@ -41,19 +82,34 @@ export function NavigationBar(){
             <Offcanvas.Title></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className='mmContent'>
-            <h1><Link href="/articles/"><a className="mobileMenuLinks">Articles</a></Link></h1>
+            <h1><Link href="/articles/"><a className="menuLinks">All Quizzes</a></Link></h1>
+            <br/>
+            <Link href="/nature/"><button className="menuCard" onClick={handleClose1}>
+              <h4 className="menuLinks">Main Quiz</h4>
+              <p>Is There A God?</p>
+            </button></Link>
+            <Link href="/God/"><button className="menuCard" onClick={handleClose1}>
+              <h4 className="menuLinks">Morality Quiz</h4>
+              <p>Is Morality Dependent on Culture?</p>
+            </button></Link>
+            <Link href="/Religions/"><button className="menuCard" onClick={handleClose1}>
+              <h4 className="menuLinks">Religions Quiz</h4>
+              <p>What Do You Know About the Six Largest Religions?</p>
+            </button></Link>
+            <br/>
+            <br/>
+            <h1><Link href="/articles/"><a className="menuLinks">All Articles</a></Link></h1>
+            <br/>
             <Link href="/nature/"><button className="menuCard" onClick={handleClose}>
-              <h4 className="mobileMenuLinks">Nature</h4>
-              <div className="menuImage" id="UniverseMenuI"></div>
-              <p>Was There a Beginning? Is Reality an Illusion? What Caused the Big Bang?</p>
+              <h4 className="menuLinks">General</h4>
+              <p>What Is Truth? Is Reality an Illusion?</p>
             </button></Link>
             <Link href="/God/"><button className="menuCard" onClick={handleClose}>
-              <h4 className="mobileMenuLinks">God</h4>
-              <p>The Design Argument &#183; The Argument from Reason &#183; The Cosmological Argument &#183; Miracles</p>
+              <h4 className="menuLinks">God</h4>
+              <p>The Major Arguments &#183; Naturalism vs. Time</p>
             </button></Link>
             <Link href="/Religions/"><button className="menuCard" onClick={handleClose}>
-              <h4 className="mobileMenuLinks">Religions</h4>
-              <div className="menuImage" id="ReligionsMenuI"></div>
+              <h4 className="menuLinks">Beliefs</h4>
               <p>Agnosticism &#183; Atheism &#183; Christianity &#183; Islam &#183; Hunduism &#183; Buddhism</p>
             </button></Link>
           </Offcanvas.Body>

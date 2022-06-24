@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as questions from '@/components/questions';
-import * as explanations from '@/components/explanations';
-import {GetResponse} from '@/components/logicmap';
+import * as explanations from '@/components/mq_explanations';
+import {GetResponse} from '@/components/mq_logicmap';
 import {NavigationBar} from '@/components/navbar';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';

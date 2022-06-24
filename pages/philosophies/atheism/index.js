@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React from 'react';
 import {NavigationBar} from '../../../components/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
 
 export default function AtheismHome(){
     return(
@@ -52,8 +51,7 @@ export default function AtheismHome(){
                     is supremely intelligent and powerful; His works are all around us; and we ought to call him God.
                 </p>
                 <p>
-                    To see an overview of a number of proofs for God, please read 
-                    <Link href="./christianity/existence_of_god"><a className ='articleLinks'>The Existence of God</a></Link>
+                    To see an overview of a number of proofs for God, please read <Link href="./christianity/existence_of_god"><a className ='articleLinks'>The Existence of God</a></Link>
                 </p>
                 <br/><br/>
             </div>

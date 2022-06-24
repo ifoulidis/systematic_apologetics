@@ -1,5 +1,5 @@
 import * as questions from './questions';
-import * as explanations from './explanations'
+import * as explanations from './mq_explanations'
 
 export function GetResponse(s){
     const SO = s
@@ -58,7 +58,7 @@ export function GetResponse(s){
             return explanations.infinite_regress
         }
         else if (SO.answer === "I'm not sure."){
-            return explanations.e3
+            return explanations.placeholder
         } 
     }
     else if (SO === 'Does God Care?'){

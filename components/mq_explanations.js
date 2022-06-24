@@ -2,7 +2,7 @@ import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
 import { useRouter } from 'next/router'
-import GetResponse from './logicmap';
+import GetResponse from './mq_logicmap';
 
 
 export function cosmological_argument(){
@@ -45,20 +45,12 @@ export function infinite_regress(){
 export function placeholder(){
     return(
         <div>
-            <p>Yet to be filled out.</p>
+            <p>Content is coming soon!</p>
  
         </div>
     )
 }
 
-export function e3(){
-    return(
-        <div>
-            <p>Yet to be filled out.</p>
- 
-        </div>
-    )
-}
 
 export function atheismEx(){
     return(
@@ -66,8 +58,7 @@ export function atheismEx(){
             <h1 className="eTitle">Atheism Does Not Make Sense</h1>
             <br/>
             <p>No matter how many scientsts profess to be atheists, no matter how many people claim that the idea of a God is baseless, and no matter how many times the word evidence is flung around: atheism will still be a false belief.</p>
-            <p>There is very good evidence for the existence of God, and there are a number of arguments which prove His existence also.</p>
-            <Link href="/philosophies/atheism/"><a></a></Link>
+            <p>There is very good evidence for the existence of God, and there are a number of arguments which prove His existence also. Please see <Link href="/philosophies/atheism/" className='articleLinks'><a></a></Link></p>
         </div>
     )
 }
@@ -76,7 +67,7 @@ export function islamEx(){
     return(
         <div>
             <p>Islam.</p>
-            <Link href="/philosophies/islam/"><a>Islam</a></Link>
+            <Link href="/philosophies/islam/" className='articleLinks'><a>Islam</a></Link>
         </div>
     )
 }
