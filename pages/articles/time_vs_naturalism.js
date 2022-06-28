@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image'
 import React from 'react';
-import {NavigationBar} from '../../../components/navbar';
-import Card from '../../../components/Card'
-import HourGlass from '../../../public/hourglass.jpg';
-import Tomb from '../../../public/resurrection.jpg';
-import EarthImage from '../../../public/Earth.jpg';
-import SpaceImage from '../../../public/Space1.jpg';
+import Card from '@/components/Card.js';
+import {NavigationBar} from '@/components/navbar.js';
+import HourGlass from '../../public/hourglass.jpg';
+import Tomb from '../../public/resurrection.jpg';
+import EarthImage from '../../public/Earth.jpg';
+import SpaceImage from '../../public/Space1.jpg';
 
 
 export default function TimevsNaturalism(){
@@ -32,9 +32,9 @@ export default function TimevsNaturalism(){
         <br/><br/>
       </div>
       <div className="grid-container">
-        {Card('./philosophies/christianity/existence_of_god', 'The Existence of God', <p>A Very Quick Summary of the Main Arguments for and Against</p>, SpaceImage)}
-        {Card('./philosophies/christianity/', 'Christianity', <p>Why Should I Believe That Christianity Is True?</p>, Tomb)}
-        {Card('./philosophies/christianity/cosmological_argument', 'The Cosmological Argument', <p>Everything Impermanent Must Be Created &bull; Can God Answer the Problem of the First Cause?</p>, EarthImage)}
+        {Card('./existence_of_god', 'The Existence of God', <p>A Very Quick Summary of the Main Arguments for and Against</p>, SpaceImage)}
+        {Card('#', 'Christianity', <p>Why Should I Believe That Christianity Is True?</p>, Tomb)}
+        {Card('./cosmological_argument', 'The Cosmological Argument', <p>Everything Impermanent Must Be Created &bull; Can God Answer the Problem of the First Cause?</p>, EarthImage)}
       </div>
     </div>
   );

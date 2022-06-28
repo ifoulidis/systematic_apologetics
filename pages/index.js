@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavigationBar} from '../components/navbar.js';
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image'
 import styles from "../styles/Home.module.css";
@@ -126,12 +124,12 @@ export default function Home() {
         {quest}
       </div>
       <div className="grid-container">
-        {Card('./whatIsTruth', 'What Is Truth?', <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)}
+        {Card('./articles/whatIsTruth', 'What Is Truth?', <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)}
         {Card('./philosophies/atheism/', 'Atheism', <p>Is It Possible to Disprove God?</p>, Darwin)}
         {Card('./philosophies/islam/', 'Islam', <p>Is Islam Internally Consistent?</p>, IslamImage)}
-        {Card('./philosophies/agnosticism/reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
-        {Card('./philosophies/christianity/cosmological_argument', 'The Cosmological Argument', <p>Can Cause and Effect Go on Forever?</p>, EarthImage)}
-        {Card('./philosophies/christianity/time_vs_naturalism', 'Time vs. Naturalism', <p>Can the Universe Have Always Existed?</p>, HourGlass1)}
+        {Card('./articles/reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
+        {Card('./articles/cosmological_argument', 'The Cosmological Argument', <p>Can Cause and Effect Go on Forever?</p>, EarthImage)}
+        {Card('./articles/time_vs_naturalism', 'Time vs. Naturalism', <p>Can the Universe Have Always Existed?</p>, HourGlass1)}
       </div>
       <div className='Footer'>
 

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import {NavigationBar} from '../../../components/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
+import Card from '@/components/Card.js';
+import {NavigationBar} from '@/components/navbar.js';
 
 export default function ArgumentFromReason(){
     return(
