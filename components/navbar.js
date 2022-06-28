@@ -84,7 +84,7 @@ export function NavigationBar(){
           <Offcanvas.Body className='mmContent'>
             <h1><Link href="/articles/"><a className="menuLinks">All Quizzes</a></Link></h1>
             <br/>
-            <Link href="/nature/"><button className="menuCard" onClick={handleClose1}>
+            <Link href="/quizzes/main_quiz"><button className="menuCard" onClick={handleClose1}>
               <h4 className="menuLinks">Main Quiz</h4>
               <p>Is There A God?</p>
             </button></Link>
