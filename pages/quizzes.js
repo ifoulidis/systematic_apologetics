@@ -25,14 +25,14 @@ export default function Quizzes(){
       <div className='titleBox'>
         <h1>Take a Quiz</h1>
       </div>
-      <div className='titleBox'>
+      <div className='titleBoxText'>
         <p>These quizzes are not tests.</p>
         <p>Their goal is find out what you know and then provide you with answers.</p>
       </div>
       <div className="grid-container">
         {Card('./quizzes/main_quiz', 'Origin of the Universe Quiz', <p>Has the Universe Always Existed?</p>, SpaceImage)}
-        {Card('./quizzes/morality_quiz', 'Morality Quiz', <p>Is Anything Really Right or Wrong?</p>, Truth)}
-        {Card('./quizzes/world_religions_quiz', 'World Religions Quiz', <p>How Much Do You Know about Religions?</p>, IslamImage)}
+        {Card('./quizzes/morality_quiz', 'Morality Quiz', <p>Under Construction</p>, Truth)}
+        {Card('./quizzes/world_religions_quiz', 'World Religions Quiz', <p>Under Construction</p>, IslamImage)}
       </div>
     </div>
   );

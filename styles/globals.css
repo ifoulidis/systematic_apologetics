@@ -241,6 +241,21 @@ iframe[src*=youtube] {
   text-shadow: 4px 2px 4px rgb(180, 178, 173);
 }
 
+.titleBoxText{
+    font-family: 'Literata', Garamond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    height: 100px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
 /* ##################### */
 /* ##################### */
 /* ##################### */

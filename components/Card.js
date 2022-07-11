@@ -8,7 +8,7 @@ export default function Card(link, title, description, image, tags) {
   if (image){
     return (
       <Link href={link}><motion.button className="articleGrid">
-        <Image src={image} layout='intrinsic'/>
+        <Image src={image} layout='intrinsic' alt=""/>
         <h4 className="cardT">{title}</h4>
         {description}
       </motion.button></Link>

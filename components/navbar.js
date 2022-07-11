@@ -44,9 +44,8 @@ export function NavigationBar(){
           <Offcanvas.Body className='mmContent'>
             {headings.map((val, key) => {
               return (
-                <Link href={val.link}>
+                <Link href={val.link} key={key}>
                   <motion.div 
-                  id={key}
                   whileTap={{scale:0.9}}
                   className="menuCard" 
                   onClick={handleClose}>

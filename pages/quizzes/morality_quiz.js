@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import * as questions from './morality_src/morality_quiz_q';
-import * as explanations from './morality_src/morality_quiz_e';
-import {GetResponse} from './morality_src/morality_quiz_lm';
+import * as questions from '../../lib/morality_src/morality_quiz_q';
+import * as explanations from '../../lib/morality_src/morality_quiz_e';
+import {GetResponse} from '../../lib/morality_src/morality_quiz_lm';
 import {NavigationBar} from '@/components/navbar';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';

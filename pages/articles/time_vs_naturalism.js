@@ -16,7 +16,7 @@ export default function TimevsNaturalism(){
       <div className="MainContentContainer">
         <h1 className="articleTitle">Time vs. Naturalism</h1>
         <br/>
-        <Image src={HourGlass}/>
+        <Image src={HourGlass} alt="Hourglass."/>
         <br/><br/>
         <p>The Universe changes with time. Because of this, it cannot have always existed. Indeed, nothing bound by time has always existed. The reason is that there 
           cannot have been an infinite amount of time in the past, as that does not make sense. If there were infinite moments before this moment, we would never have 
