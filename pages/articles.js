@@ -22,7 +22,9 @@ export default function Articles(){
   return(
     <div className="App">
       <NavigationBar/>
-      <h1 className="articleTitle">Articles</h1>
+      <div className='titleBox'>
+        <h1>Investigate a Belief</h1>
+      </div>
       {/*<div className={styles.filterBox}>
         <input type='text' 
         placeholder='Search...' 
