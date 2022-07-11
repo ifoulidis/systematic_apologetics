@@ -4,13 +4,13 @@
   display:flex;
   align-items: center;
   padding: 1em;
-  height: 600px;
-  width: 1066.666px;
+  height: 100px;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-weight: 700;
   text-align: center;
+  text-shadow: 4px 2px 4px rgb(180, 178, 173);
 }
 
 
@@ -23,7 +23,7 @@
 #question2 {
   background-image: url('../public/big_bang.jpg');
   color: rgb(195, 239, 250);
-  text-shadow: 2px 2px 8px rgb(117, 16, 233);
+  
 }
 
 #question3 {
@@ -50,16 +50,12 @@
 
 @media (max-width: 1280) {
   .quizQuestionBox{
-    width:80vw;
-    height:45vw;
+    width:40vw;
+    height:22.5vw;
   }
 }
 
-@media (max-width: 480px) {
-  .quizBanner {
-    padding-left: 0%;
-     padding-right: 0%;
-  }
+@media (max-width: 690px) {
   .quizQuestionBox{
     width:100%;
     height:56.25vw;

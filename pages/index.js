@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavigationBar} from '../components/navbar.js';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image'
 import styles from "../styles/Home.module.css";
 import Truth from '../public/truth.jpg'
 import Darwin from '../public/darwin.jpg'
@@ -20,7 +19,7 @@ function Q1() {
     <AnimatePresence>
       <motion.div 
       className = {styles.quizQuestionBox}
-      id= {styles.question1}
+      // id= {styles.question1}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -37,7 +36,7 @@ function Q2() {
     <AnimatePresence>
       <motion.div 
       className = {styles.quizQuestionBox}
-      id= {styles.question2}
+      // id= {styles.question2}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -54,7 +53,7 @@ function Q3() {
     <AnimatePresence>
       <motion.div 
       className = {styles.quizQuestionBox}
-      id= {styles.question3}
+      // id= {styles.question3}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -119,20 +118,20 @@ export default function Home() {
   return(
     <div className='App'>
       <NavigationBar/>
-      <div
+      {/*<div
       style={{display:'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '3%', paddingBottom:'5%'}} >
         {quest}
+      </div>*/}
+      <div className={styles.quizQuestionBox}>
+        <h1>Featured Articles</h1>
       </div>
       <div className="grid-container">
         {Card('./articles/whatIsTruth', 'What Is Truth?', <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)}
-        {Card('./philosophies/atheism/', 'Atheism', <p>Is It Possible to Disprove God?</p>, Darwin)}
-        {Card('./philosophies/islam/', 'Islam', <p>Is Islam Internally Consistent?</p>, IslamImage)}
         {Card('./articles/reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
         {Card('./articles/cosmological_argument', 'The Cosmological Argument', <p>Can Cause and Effect Go on Forever?</p>, EarthImage)}
         {Card('./articles/time_vs_naturalism', 'Time vs. Naturalism', <p>Can the Universe Have Always Existed?</p>, HourGlass1)}
-      </div>
-      <div className='Footer'>
-
+        {Card('./philosophies/atheismHome', 'Atheism', <p>Atheism</p>, Darwin)}
+        {Card('./philosophies/islamHome', 'Islam', <p>Is Islam Internally Consistent?</p>, IslamImage)}
       </div>
     </div>
   );
