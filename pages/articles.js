@@ -23,7 +23,7 @@ export default function Articles(){
     <div className="App">
       <NavigationBar/>
       <div className='titleBox'>
-        <h1>Investigate a Belief</h1>
+        <h1>Articles</h1>
       </div>
       {/*<div className={styles.filterBox}>
         <input type='text' 

@@ -45,15 +45,16 @@ body {
 }
 
 nav {
-  border: 0px;
-  margin: 0px;
+  border-bottom: 2px solid gold;
+  margin: 0 0.7em;
   font-size: 1.3em;
-  padding: 0.7em;
+  padding: 0.4em;
 }
 
 .desktopNav{
   display: flex;
   justify-content: space-around;
+  
 }
 
 .desktopNav a:link {
@@ -88,6 +89,7 @@ nav {
   text-align: center;
 }
 
+
 .articleLinks{
   text-decoration: none;
   color: rgb(0, 191, 255);
@@ -102,7 +104,6 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -211,11 +212,17 @@ iframe[src*=youtube] {
 /* Styles for the offcanvas */
 
 .menuCard{
-  padding: 1em;
+  padding: 1.5em;
   margin-bottom: 0.5em;
   background-color: white;
-  border-bottom: 2px solid goldenrod;
+  border-bottom: 2px solid gold;
   cursor: pointer;
+}
+
+#offCanvasHome{
+  border-top: 2px solid gold;
+  padding-top: 2em;
+  margin-top: 10%;
 }
 
 .menuLinks {
@@ -227,18 +234,21 @@ iframe[src*=youtube] {
 
 
 .titleBox {
+  margin-top: 4%;
   font-family: 'Literata', Garamond;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
   height: 100px;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-weight: 700;
   text-align: center;
-  text-shadow: 4px 2px 4px rgb(180, 178, 173);
+}
+.titleBox h1{
+  border-bottom: 2px solid royalblue;
 }
 
 .titleBoxText{
@@ -255,6 +265,7 @@ iframe[src*=youtube] {
     text-align: center;
     font-size: 1.3em;
   }
+
 
 /* ##################### */
 /* ##################### */
@@ -297,6 +308,8 @@ iframe[src*=youtube] {
   nav{
     display:flex;
     justify-content: space-between;
+    border-bottom: 3px solid black;
+    margin: 0;
   }
   .mobileMenu{
     display:flex;
@@ -304,12 +317,18 @@ iframe[src*=youtube] {
   .grid-container { 
     grid-template-columns: repeat(1, 1fr); 
     padding: 2%;
-    margin:none;
+    margin: 2em 0;
   }
   .articleGrid{
     font-size: 1em;
   }
   .cardT{
     font-size: 1em;
+  }
+  .homePagePic{
+    display: flex;
+  }
+  .titleBox h1{
+    border-bottom: 1px solid gold;
   }
 }

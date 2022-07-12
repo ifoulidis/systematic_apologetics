@@ -29,7 +29,7 @@ export function NavigationBar(){
           <Link href="/beliefs" ><a className="desktopNavLinks">Beliefs</a></Link>
         </div>
         <div className="dropdown">
-          <Link href="/articles" ><a className="desktopNavLinks">Arguments</a></Link>
+          <Link href="/articles" ><a className="desktopNavLinks">Articles</a></Link>
         </div>
       </div>
       {/* Mobile offcanvas. */}
@@ -45,7 +45,8 @@ export function NavigationBar(){
             {headings.map((val, key) => {
               return (
                 <Link href={val.link} key={key}>
-                  <motion.div 
+                  <motion.div
+                  id={("offCanvas" + val.title)} 
                   whileTap={{scale:0.9}}
                   className="menuCard" 
                   onClick={handleClose}>

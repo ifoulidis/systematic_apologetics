@@ -11,22 +11,23 @@ import SpaceImage from '../public/Space1.jpg'
 import MatrixImage from '../public/matrix.jpg'
 import HourGlass1 from '../public/hourglass1.jpg'
 import Card from '../components/Card'
+import Link from 'next/link'
 
 
 
 function Q1() {
   return(
     <AnimatePresence>
-      <motion.div 
+      <Link href="/quizzes" ><motion.div 
       className = {styles.quizQuestionBox}
-      // id= {styles.question1}
+      id= {styles.question1}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{duration: 0.5}}
       >
         <h1>What Are Your Views On God?</h1>
-      </motion.div>
+      </motion.div></Link>
     </AnimatePresence>
 )
 }
@@ -34,16 +35,16 @@ function Q1() {
 function Q2() {
   return(
     <AnimatePresence>
-      <motion.div 
+      <Link href="/quizzes" ><motion.div 
       className = {styles.quizQuestionBox}
-      // id= {styles.question2}
+      id= {styles.question2}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{duration: 0.5}}
       >
         <h1>What Caused The Big Bang?</h1>
-      </motion.div>
+      </motion.div></Link>
     </AnimatePresence>
 )
 }
@@ -51,16 +52,16 @@ function Q2() {
 function Q3() {
   return(
     <AnimatePresence>
-      <motion.div 
+      <Link href="/quizzes" ><motion.div 
       className = {styles.quizQuestionBox}
-      // id= {styles.question3}
+      id= {styles.question3}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{duration: 0.5}}
       >
         <h1>How Did The First Cell Come To Be?</h1>
-      </motion.div>
+      </motion.div></Link>
     </AnimatePresence>
 )
 }
@@ -118,11 +119,18 @@ export default function Home() {
   return(
     <div className='App'>
       <NavigationBar/>
-      {/*<div
-      style={{display:'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '3%', paddingBottom:'5%'}} >
+      <motion.div
+        className="titleBox"
+        onHover={{scale: 1.2}}
+        transition={{duration: 0.1}}
+        >
+        <h1>Try a Quiz&mdash;Find Answers</h1>
+      </motion.div>
+      <div 
+      style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
         {quest}
-      </div>*/}
-      <div className={styles.quizQuestionBox}>
+      </div>
+      <div className="titleBox">
         <h1>Featured Articles</h1>
       </div>
       <div className="grid-container">
