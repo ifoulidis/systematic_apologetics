@@ -3,13 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavigationBar} from '../components/navbar.js';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from "../styles/Home.module.css";
-import Truth from '../public/truth.jpg'
-import Darwin from '../public/darwin.jpg'
-import IslamImage from '../public/islam_symbol.png'
-import EarthImage from '../public/Earth.jpg'
-import SpaceImage from '../public/Space1.jpg'
-import MatrixImage from '../public/matrix.jpg'
-import HourGlass1 from '../public/hourglass1.jpg'
+import Truth from '../public/truth-sm.jpg'
+import Darwin from '../public/darwin-sm.jpg'
+import IslamImage from '../public/islam_symbol-sm.jpg'
+import EarthImage from '../public/Earth-sm.jpg'
+import MatrixImage from '../public/matrix-sm.jpg'
+import HourGlass from '../public/hourglass-sm.jpg'
 import Card from '../components/Card'
 import Link from 'next/link'
 
@@ -126,8 +125,7 @@ export default function Home() {
         >
         <h1>Try a Quiz&mdash;Find Answers</h1>
       </motion.div>
-      <div 
-      style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
+      <div className={styles.imageBox} >
         {quest}
       </div>
       <div className="titleBox">
@@ -137,7 +135,7 @@ export default function Home() {
         {Card('./articles/whatIsTruth', 'What Is Truth?', <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)}
         {Card('./articles/reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
         {Card('./articles/cosmological_argument', 'The Cosmological Argument', <p>Can Cause and Effect Go on Forever?</p>, EarthImage)}
-        {Card('./articles/time_vs_naturalism', 'Time vs. Naturalism', <p>Can the Universe Have Always Existed?</p>, HourGlass1)}
+        {Card('./articles/time_vs_naturalism', 'Time vs. Naturalism', <p>Can the Universe Have Always Existed?</p>, HourGlass)}
         {Card('./philosophies/atheismHome', 'Atheism', <p>Atheism</p>, Darwin)}
         {Card('./philosophies/islamHome', 'Islam', <p>Is Islam Internally Consistent?</p>, IslamImage)}
       </div>

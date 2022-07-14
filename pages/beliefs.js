@@ -10,7 +10,7 @@ import Image from 'next/image';
 function ACard(link, title, image, tags) {
   if (image){
     return (
-      <Link href={link}><motion.button className="articleGrid">
+      <Link href={link}><motion.button className="cardBox">
         <Image src={image} layout='intrinsic'/>
         <h4 className="cardT">{title}</h4>
       </motion.button></Link>
@@ -18,7 +18,7 @@ function ACard(link, title, image, tags) {
   }
   else{
     return (
-      <Link href={link}><motion.button className="articleGrid">
+      <Link href={link}><motion.button className="cardBox">
         <h4 className="cardT">{title}</h4>
       </motion.button></Link>
     )

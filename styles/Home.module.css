@@ -6,6 +6,7 @@
   align-items: center;
   padding: 1em;
   height: 300px;
+  width: 600px;
   justify-content: space-around;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,6 +15,12 @@
   text-shadow: 4px 2px 4px rgb(180, 178, 173);
 }
 
+.imageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 #question1{
   background-image: url('../public/resurrection.jpg');

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react';
 import Card from '@/components/Card.js';
 import {NavigationBar} from '@/components/navbar.js';
-import HourGlass from '../../public/hourglass.jpg';
+import HourGlass from '../../public/hourglass-lg.jpg';
 import Tomb from '../../public/resurrection.jpg';
 import EarthImage from '../../public/Earth.jpg';
 import SpaceImage from '../../public/Space1.jpg';

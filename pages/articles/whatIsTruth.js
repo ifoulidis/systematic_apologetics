@@ -3,9 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from '@/components/Card.js';
 import {NavigationBar} from '@/components/navbar.js';
-import EarthImage from '../../public/Earth.jpg'
-import SpaceImage from '../../public/Space1.jpg'
-import MatrixImage from '../../public/matrix.jpg'
+import Recommendations from '@/components/Recommendations';
 
 export default function WhatIsTruth(){
   return(
@@ -30,9 +28,7 @@ export default function WhatIsTruth(){
         <br/><br/>
       </div>
       <div className="grid-container">
-        {Card('./reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
-        {Card('./cosmological_argument', 'The Cosmological Argument', <p>Everything Impermanent Must Be Created &bull; Can God Answer the Problem of the First Cause?</p>, EarthImage)}
-        {Card('./existence_of_god', 'The Existence of God', <p>A Very Quick Summary of the Main Arguments for and Against</p>, SpaceImage)}
+        {Recommendations(['The Existence of God', 'The Cosmological Argument', 'Is Reality An Illusion?'])}
       </div>
     </div>
   );
