@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 import Truth from '../public/truth-sm.jpg'
 import Darwin from '../public/darwin-sm.jpg'
 import IslamImage from '../public/islam_symbol-sm.jpg'
-import EarthImage from '../public/Earth-sm.jpg'
+import EarthImage from '../public/earth-sm.jpg'
 import MatrixImage from '../public/matrix-sm.jpg'
 import HourGlass from '../public/hourglass-sm.jpg'
 import Card from '../components/Card'
