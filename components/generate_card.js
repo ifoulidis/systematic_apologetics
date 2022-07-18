@@ -18,7 +18,7 @@ export default function GenerateCard(article){
     case 'Is Reality An Illusion?': 
       return Card('articles/reality_illusion', article, <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)
     case 'Christianity': 
-      return Card('/beliefs/christianityHome', article, <p>Why Should I Believe That Christianity Is True?</p>, ThreeWiseMen)
+      return Card('/belief_systems/christianityHome', article, <p>Why Should I Believe That Christianity Is True?</p>, ThreeWiseMen)
     case 'What Is Truth?':
       return Card('articles/whatIsTruth', article, <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)
     case 'Jesus: Moral Teacher or Deity?':

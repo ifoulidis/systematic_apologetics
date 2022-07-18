@@ -43,17 +43,17 @@ export default function Beliefs(){
       <div className="grid-container">
         {ACard('./articles/whatIsTruth', 'I Don\'t Know', 
         undefined, ('unsure', 'we can\'t know'))}
-        {ACard('../philosophies/agnosticismHome', 'Agnosticism', 
+        {ACard('../belief_systems/agnosticismHome', 'Agnosticism', 
         undefined, ('unsure', 'we can\'t know'))}
-        {ACard('../philosophies/atheismHome', 'Atheism', undefined, ('no religion', 'irreligious', 'no God'))}
-        {ACard('../philosophies/buddhismHome', 'Buddhism', undefined, ('unsure', 'we can\'t know'))}
-        {ACard('./philosophies/christianityHome', 'Christianity', undefined, ('unsure', 'we can\'t know'))}
-        {ACard('./philosophies/catholicismHome', 'Catholicism', undefined, ('unsure', 'we can\'t know'))}
-        {ACard('./philosophies/hinduismHome', 'Hinduism', undefined, ('unsure', 'we can\'t know'))}
-        {ACard('./philosophies/islamHome', 'Islam', undefined, ('unsure', 'we can\'t know'))}
-        {ACard('./philosophies/progressiveHome', 'Progressive Christianity', undefined, ('unsure', 'we can\'t know'))}
-        {ACard('./philosophies/sikhismHome', 'Sikhism', undefined, ('unsure', 'we can\'t know'))}
-        {ACard('./philosophies/spiritualismHome', 'Spiritualism', undefined, ('spritual not religious', 'we can\'t know'))}
+        {ACard('../belief_systems/atheismHome', 'Atheism', undefined, ('no religion', 'irreligious', 'no God'))}
+        {ACard('../belief_systems/buddhismHome', 'Buddhism', undefined, ('unsure', 'we can\'t know'))}
+        {ACard('./belief_systems/christianityHome', 'Christianity', undefined, ('unsure', 'we can\'t know'))}
+        {ACard('./belief_systems/catholicismHome', 'Catholicism', undefined, ('unsure', 'we can\'t know'))}
+        {ACard('./belief_systems/hinduismHome', 'Hinduism', undefined, ('unsure', 'we can\'t know'))}
+        {ACard('./belief_systems/islamHome', 'Islam', undefined, ('unsure', 'we can\'t know'))}
+        {ACard('./belief_systems/progressiveHome', 'Progressive Christianity', undefined, ('unsure', 'we can\'t know'))}
+        {ACard('./belief_systems/sikhismHome', 'Sikhism', undefined, ('unsure', 'we can\'t know'))}
+        {ACard('./belief_systems/spiritualismHome', 'Spiritualism', undefined, ('spritual not religious', 'we can\'t know'))}
       </div>
     </div>
   );

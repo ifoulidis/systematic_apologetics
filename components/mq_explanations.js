@@ -58,7 +58,7 @@ export function atheismEx(){
             <h1 className="eTitle">Atheism Does Not Make Sense</h1>
             <br/>
             <p>No matter how many scientsts profess to be atheists, no matter how many people claim that the idea of a God is baseless, and no matter how many times the word evidence is flung around: atheism will still be a false belief.</p>
-            <p>There is very good evidence for the existence of God, and there are a number of arguments which prove His existence also. Please see <Link href="/philosophies/atheism/" className='articleLinks'><a></a></Link></p>
+            <p>There is very good evidence for the existence of God, and there are a number of arguments which prove His existence also. Please see <Link href="/belief_systems/atheism/" className='articleLinks'><a></a></Link></p>
         </div>
     )
 }
@@ -67,7 +67,7 @@ export function islamEx(){
     return(
         <div>
             <p>Islam.</p>
-            <Link href="/philosophies/islam/" className='articleLinks'><a>Islam</a></Link>
+            <Link href="/belief_systems/islam/" className='articleLinks'><a>Islam</a></Link>
         </div>
     )
 }
