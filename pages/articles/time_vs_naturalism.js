@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react';
-import Recommendations from '@/components/Recommendations';
+import {Recommendations} from '@/components/Recommendations.js';
 import {NavigationBar} from '@/components/navbar.js';
 import HourGlass from '../../public/hourglass-lg.jpg';
 

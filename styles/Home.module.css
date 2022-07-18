@@ -23,19 +23,19 @@
 }
 
 #question1{
-  background-image: url('../public/resurrection.jpg');
+  background-image: url('../public/images/resurrection.jpg');
   color: white;
   text-shadow: -4px -2px 4px rgb(0, 0, 0);
 }
 
 #question2 {
-  background-image: url('../public/big_bang.jpg');
+  background-image: url('../public/images/big_bang.jpg');
   color: rgb(195, 239, 250);
   
 }
 
 #question3 {
-  background-image: url('../public/dna.jpg');
+  background-image: url('../public/images/dna.jpg');
   color: whitesmoke;
   text-shadow: 4px 2px 4px rgb(224, 176, 70);
 }

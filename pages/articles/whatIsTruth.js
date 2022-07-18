@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from '@/components/Card.js';
 import {NavigationBar} from '@/components/navbar.js';
-import Recommendations from '@/components/Recommendations';
+import {Recommendations} from '@/components/Recommendations.js';
 
 export default function WhatIsTruth(){
   return(
