@@ -1,13 +1,13 @@
 import Card from './Card'
-import Truth from 'public/truth-sm.jpg'
-import Darwin from 'public/darwin-sm.jpg'
-import IslamImage from 'public/islam_symbol-sm.jpg'
-import EarthImage from 'public/earth-sm.jpg'
-import MatrixImage from 'public/matrix-sm.jpg'
-import HourGlass from 'public/hourglass-sm.jpg'
-import SpaceImage from 'public/red_space-sm.jpg'
-import EmptyTomb from 'public/empty_tomb-sm.jpg'
-import ThreeWiseMen from 'public/three_wise_men-sm.jpg'
+import Truth from '@/public/truth-sm.jpg'
+import Darwin from '@public/darwin-sm.jpg'
+import IslamImage from '@public/islam_symbol-sm.jpg'
+import EarthImage from '@public/earth-sm.jpg'
+import MatrixImage from '@public/matrix-sm.jpg'
+import HourGlass from '@public/hourglass-sm.jpg'
+import SpaceImage from '@public/red_space-sm.jpg'
+import EmptyTomb from '@public/empty_tomb-sm.jpg'
+import ThreeWiseMen from '@public/three_wise_men-sm.jpg'
 
 export default function GenerateCard(article){
   switch (article) {
