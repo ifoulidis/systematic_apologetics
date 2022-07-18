@@ -5,13 +5,13 @@ import Link from 'next/link'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Card from '@/components/Card';
-import Truth from '../public/truth.jpg'
-import Darwin from '../public/darwin.jpg'
-import IslamImage from '../public/islam_symbol.png'
-import EarthImage from '../public/Earth.jpg'
-import SpaceImage from '../public/Space1.jpg'
-import MatrixImage from '../public/matrix.jpg'
-import HourGlass1 from '../public/hourglass1.jpg'
+import Truth from '../public/truth-sm.jpg'
+import Darwin from '../public/darwin-sm.jpg'
+import IslamImage from '../public/islam_symbol-sm.jpg'
+import EarthImage from '../public/Earth-sm.jpg'
+import SpaceImage from '../public/Space1-sm.jpg'
+import MatrixImage from '../public/matrix-sm.jpg'
+import HourGlass1 from '../public/hourglass1-sm.jpg'
 //import {useState} from 'react'
 //import styles from "../styles/Articles.module.css";
 

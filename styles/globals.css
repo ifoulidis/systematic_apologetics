@@ -120,6 +120,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 }
 
 .cardT{
@@ -201,6 +202,10 @@ nav {
   justify-content: center;
 }
 
+blockquote{
+  padding: 1em 40px;
+}
+
 /* Styles for displaying youtube videos. */
 .iframeVideo{
   align-items: center;
@@ -213,21 +218,7 @@ iframe[src*=youtube] {
   padding-bottom: 10px;
 }
 
-/* Styles for the offcanvas */
-
-.menuCard{
-  padding: 1.5em;
-  margin-bottom: 0.5em;
-  background-color: white;
-  border-bottom: 2px solid gold;
-  cursor: pointer;
-}
-
-#offCanvasHome{
-  border-top: 2px solid gold;
-  padding-top: 2em;
-  margin-top: 10%;
-}
+/* Styles for the Cards */
 
 .menuLinks {
   text-decoration: none;

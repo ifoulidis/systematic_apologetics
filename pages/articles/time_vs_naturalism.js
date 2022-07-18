@@ -1,12 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image'
 import React from 'react';
-import Card from '@/components/Card.js';
+import Recommendations from '@/components/Recommendations';
 import {NavigationBar} from '@/components/navbar.js';
 import HourGlass from '../../public/hourglass-lg.jpg';
-import Tomb from '../../public/resurrection.jpg';
-import EarthImage from '../../public/Earth.jpg';
-import SpaceImage from '../../public/Space1.jpg';
 
 
 export default function TimevsNaturalism(){
@@ -32,9 +29,7 @@ export default function TimevsNaturalism(){
         <br/><br/>
       </div>
       <div className="grid-container">
-        {Card('./existence_of_god', 'The Existence of God', <p>A Very Quick Summary of the Main Arguments for and Against</p>, SpaceImage)}
-        {Card('#', 'Christianity', <p>Why Should I Believe That Christianity Is True?</p>, Tomb)}
-        {Card('./cosmological_argument', 'The Cosmological Argument', <p>Everything Impermanent Must Be Created &bull; Can God Answer the Problem of the First Cause?</p>, EarthImage)}
+        {Recommendations(['The Existence of God', 'Christianity', 'The Cosmological Argument'])}
       </div>
     </div>
   );

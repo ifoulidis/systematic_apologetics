@@ -8,3 +8,6 @@ Files:
 
 className:
   camelcase.
+
+In-article images are 1200px wide.
+Thumbnail images are 600px wide.

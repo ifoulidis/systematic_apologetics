@@ -12,7 +12,7 @@
         "pages/quizzes/*"
       ],  
       "@/atheism/*": [
-        "pages/philosophies/atheism*"
+        "pages/beliefs/atheism*"
       ] 
     }
   }
