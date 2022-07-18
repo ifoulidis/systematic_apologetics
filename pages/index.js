@@ -2,14 +2,14 @@ import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavigationBar} from '../components/navbar.js';
 import { motion, AnimatePresence } from 'framer-motion';
-import styles from "../styles/Home.module.css";
-import Truth from '../public/truth-sm.jpg'
-import Darwin from '../public/darwin-sm.jpg'
-import IslamImage from '../public/islam_symbol-sm.jpg'
-import EarthImage from '../public/earth-sm.jpg'
-import MatrixImage from '../public/matrix-sm.jpg'
-import HourGlass from '../public/hourglass-sm.jpg'
-import Card from '../components/Card'
+import styles from "styles/Home.module.css";
+import Truth from 'public/truth-sm.jpg'
+import Darwin from 'public/darwin-sm.jpg'
+import IslamImage from 'public/islam_symbol-sm.jpg'
+import EarthImage from 'public/earth-sm.jpg'
+import MatrixImage from 'public/matrix-sm.jpg'
+import HourGlass from 'public/hourglass-sm.jpg'
+import Card from '@/components/Card.js';
 import Link from 'next/link'
 
 

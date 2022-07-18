@@ -15,7 +15,7 @@ export default function IsRealityAnIllusion(){
         <h5>Is Reality an Illusion? Is Simulation Theory True?</h5>
         <br/>
         <p>Here I&#39;m speaking to those who are having a bit of an existential crisis: what if nothing is real? Good news: that is impossible. Only a being with a mind can experience illusions, so even if you were to suppose that all of your experiences are inauthentic somehow, your mind still exists.
-          <br/>As to assuming you live in the matrix, there is simply no evidence for it. However, if you are looking for answers as to what more there could be besides the universe and ourselves, I suggest you read <Link href="../christianity/existence_of_god"><a className='articleLinks'>The Existence of God.</a></Link></p>
+          <br/>As to assuming you live in the matrix, there is simply no evidence for it. However, if you are looking for answers as to what more there could be besides the universe and ourselves, I suggest you read <Link href="./existence_of_god"><a className='articleLinks'>The Existence of God.</a></Link></p>
         <br/>
         <h5>Multiverse Theory</h5>
         <br/>
