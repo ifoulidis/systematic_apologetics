@@ -5,6 +5,9 @@
       "@/components/*": [
         "components/*"
       ],
+      "@/public/*": [
+        "public/*"
+      ],
       "@/articles/*": [
         "pages/articles/*"
       ],
