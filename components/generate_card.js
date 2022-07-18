@@ -14,7 +14,7 @@ export default function GenerateCard(article){
     case 'The Existence of God': 
       return Card('articles/existence_of_god', article, <p>A Very Quick Summary of the Main Arguments for and Against</p>, SpaceImage)
     case 'The Cosmological Argument': 
-      return Card('articles/cosmological_argument', article, <p>Everything Impermanent Must Be Created &bull; Can God Answer the Problem of the First Cause?</p>, EarthImage)
+      return Card('articles/cosmological_argument', article, <p>Can God Answer the Problem of the First Cause?</p>, EarthImage)
     case 'Is Reality An Illusion?': 
       return Card('articles/reality_illusion', article, <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)
     case 'Christianity': 
@@ -25,5 +25,9 @@ export default function GenerateCard(article){
       return Card('articles/jesus_moral_teacher_or_deity', article, <p>Liar, Lunatic, or Lord?</p>, EmptyTomb)
     case 'Time vs. Naturalism':
       return Card('articles/time_vs_naturalism', article, <p>Can the Universe Have Always Existed?</p>, HourGlass)
+    case 'Islam':
+      return Card('belief_systems/islam', article, <p>Is Islam True?</p>, IslamImage)
+    case 'Atheism':
+      return Card('belief_systems/atheism', article, <p>Is Atheism True?</p>, Darwin)
   }
 }
