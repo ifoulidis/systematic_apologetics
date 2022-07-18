@@ -3,13 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavigationBar} from '../components/navbar.js';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from "styles/Home.module.css";
-import Truth from 'public/truth-sm.jpg'
-import Darwin from 'public/darwin-sm.jpg'
-import IslamImage from 'public/islam_symbol-sm.jpg'
-import EarthImage from 'public/earth-sm.jpg'
-import MatrixImage from 'public/matrix-sm.jpg'
-import HourGlass from 'public/hourglass-sm.jpg'
-import Card from '@/components/Card.js';
+import Recommendations from '@/components/Recommendations.js';
 import Link from 'next/link'
 
 
@@ -132,12 +126,7 @@ export default function Home() {
         <h1>Featured Articles</h1>
       </div>
       <div className="grid-container">
-        {Card('./articles/whatIsTruth', 'What Is Truth?', <p>Is Truth Relative? &bull; Can I Have My Own Truth?</p>, Truth)}
-        {Card('./articles/reality_illusion', 'Is Reality An Illusion?', <p>The Matrix &bull; Simulation Theory &bull; Multiverse Theory</p>, MatrixImage)}
-        {Card('./articles/cosmological_argument', 'The Cosmological Argument', <p>Can Cause and Effect Go on Forever?</p>, EarthImage)}
-        {Card('./articles/time_vs_naturalism', 'Time vs. Naturalism', <p>Can the Universe Have Always Existed?</p>, HourGlass)}
-        {Card('./philosophies/atheismHome', 'Atheism', <p>Atheism</p>, Darwin)}
-        {Card('./philosophies/islamHome', 'Islam', <p>Is Islam Internally Consistent?</p>, IslamImage)}
+        {Recommendations(['What Is Truth?', 'Is Reality An Illusion?', 'The Cosmological Argument', 'Time vs. Naturalism', 'Atheism', 'Islam'])}
       </div>
     </div>
   );
