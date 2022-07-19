@@ -1,14 +1,14 @@
 import Card from './Card'
 // Without the './' before the '../', I was getting an error during deployment. Seems weird, but it works!
-import Truth from '../public/truth-sm.jpg'
-import Darwin from '../public/darwin-sm.jpg'
-import IslamImage from '../public/islam_symbol-sm.jpg'
-import EarthImage from '../public/earth-sm.jpg'
-import MatrixImage from '../public/matrix-sm.jpg'
-import HourGlass from '../public/hourglass-sm.jpg'
-import SpaceImage from '../public/red_space-sm.jpg'
-import EmptyTomb from '../public/empty_tomb-sm.jpg'
-import ThreeWiseMen from '../public/three_wise_men-sm.jpg'
+import Truth from '@/public/images/truth-sm.jpg'
+import Darwin from '@/public/images/darwin-sm.jpg'
+import IslamImage from '@/public/images/islam_symbol-sm.jpg'
+import EarthImage from '@/public/images/earth-sm.jpg'
+import MatrixImage from '@/public/images/matrix-sm.jpg'
+import HourGlass from '@/public/images/hourglass-sm.jpg'
+import SpaceImage from '@/public/images/red_space-sm.jpg'
+import EmptyTomb from '@/public/images/empty_tomb-sm.jpg'
+import ThreeWiseMen from '@/public/images/three_wise_men-sm.jpg'
 
 
 export default function GenerateCard(article){

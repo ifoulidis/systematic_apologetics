@@ -1,5 +1,4 @@
-import Card from '@/components/Card.js';
-import GenerateCard from './generate_card';
+import GenerateCard from '@/components/generate_card';
 
 export default function Recommendations(articles) {
   const cardSet = []

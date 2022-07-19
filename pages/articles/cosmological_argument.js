@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import Card from '@/components/Card.js';
 import {NavigationBar} from '@/components/navbar.js';
 
 export default function CosmologicalArgument(){

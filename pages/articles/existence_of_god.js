@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from '@/components/Card.js';
 import {NavigationBar} from '@/components/navbar.js';
 
 export default function ExistenceOfGod(){

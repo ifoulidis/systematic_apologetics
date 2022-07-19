@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavigationBar} from '@/components/navbar'
 import {motion, AnimatePresence } from 'framer-motion';
 import styles from "styles/Home.module.css";
-import {Recommendations} from '@/components/Recommendations.js';
+import Recommendations from '@/components/Recommendations.js';
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 

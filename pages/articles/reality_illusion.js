@@ -3,6 +3,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from '@/components/Card.js';
 import {NavigationBar} from '@/components/navbar.js';
+import Matrix from '@/public/images/matrix-lg.jpg' 
+import Image from 'next/image'
 
 export default function IsRealityAnIllusion(){
   return(
@@ -12,6 +14,8 @@ export default function IsRealityAnIllusion(){
         <h1 className="articleTitle">Is Reality an Illusion?</h1>
         <h5 className="articleTitle">Simulation Theory &#183; Multiverse Theory</h5>
         <br/><br/>
+        <Image src={Matrix} alt="Matrix."/>
+        <br/>
         <h5>Is Reality an Illusion? Is Simulation Theory True?</h5>
         <br/>
         <p>Here I&#39;m speaking to those who are having a bit of an existential crisis: what if nothing is real? Good news: that is impossible. Only a being with a mind can experience illusions, so even if you were to suppose that all of your experiences are inauthentic somehow, your mind still exists.
