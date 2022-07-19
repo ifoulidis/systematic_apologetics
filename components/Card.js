@@ -7,19 +7,19 @@ import Image from 'next/image';
 export default function Card(link, title, description, image, tags) {
   if (image){
     return (
-      <Link key={title} href={link}><motion.div className="cardBox">
+      <Link key={title} className="cardBoxLink" href={link}><div className="cardBox">
         <Image src={image} layout='intrinsic' alt=""/>
         <h4 className="cardT">{title}</h4>
         {description}
-      </motion.div></Link>
+      </div></Link>
     )
   }
   else{
     return (
-      <Link key={title} href={link}><motion.div className="cardBox" >
+      <Link key={title} className="cardBoxLink" href={link}><div className="cardBox">
         <h4 className="cardT">{title}</h4>
         {description}
-      </motion.div></Link>
+      </div></Link>
     )
   }
 }

@@ -10,11 +10,6 @@ body {
   min-height: calc(100vh - 100px);
 }
 
-.desktopNavLinks{
-  text-decoration: none;
-  color: inherit;
-  font-family: 'Literata', Garamond;
-}
 
 /* ###################### */
 /* Styles for the navbar. */
@@ -52,7 +47,7 @@ body {
 }
 
 nav {
-  border-bottom: 2px solid gold;
+  border-bottom: 2px solid rgb(0, 162, 255);
   margin: 0 0.7em;
   font-size: 1.3em;
   padding: 0.4em;
@@ -70,6 +65,16 @@ nav {
 
 .desktopNav a:visited {
   text-decoration: none;
+}
+
+.desktopNavLinks {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Literata', Garamond;
+}
+
+.desktopNavLinks:hover {
+  color: rgb(0, 162, 255);
 }
 
 /*Dropdown*/
@@ -123,7 +128,16 @@ nav {
   font-size: 1.2em;
   background-color: white;
   display: flex;
+  cursor: pointer;
+}
 
+
+.cardBox:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .cardBox {
@@ -139,6 +153,7 @@ nav {
   justify-content: flex-start;
   text-align: center;
   cursor: pointer;
+  transition: transform .2s;
 }
 
 .cardT{
@@ -245,7 +260,7 @@ iframe[src*=youtube] {
 }
 
 .titleBox {
-  margin-top: 4%;
+  margin-top: 1%;
   font-family: 'Literata', Garamond;
   display: flex;
   flex-direction: column;
@@ -258,9 +273,9 @@ iframe[src*=youtube] {
   font-weight: 700;
   text-align: center;
 }
-.titleBox h1{
+/* .titleBox h1{
   border-bottom: 1px solid royalblue;
-}
+} */
 
 .titleBoxText{
     font-family: 'Literata', Garamond;
@@ -275,6 +290,7 @@ iframe[src*=youtube] {
     font-weight: 700;
     text-align: center;
     font-size: 1.3em;
+    color:grey;
   }
 
 
@@ -339,7 +355,7 @@ iframe[src*=youtube] {
   .homePagePic{
     display: flex;
   }
-  .titleBox h1{
+/*   .titleBox h1{
     border-bottom: 1px solid gold;
-  }
+  } */
 }

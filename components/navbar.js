@@ -19,24 +19,24 @@ export function NavigationBar(){
   return(
     <nav>
       <div className='desktopNav'>
-        <div className="siteName">
+        <motion.div whileHover={{scale:1.2}} whileTap={{scale:0.9}} className="siteName">
           <Link href="/" ><a className="desktopNavLinks">What Is Truth</a></Link>
-        </div>
-        <div className="dropdown">
+        </motion.div>
+        <motion.div whileHover={{scale:1.2}} whileTap={{scale:0.9}} className="dropdown">
           <Link href="/quizzes" ><a className="desktopNavLinks">Quizzes</a></Link>
-        </div>
-        <div className="dropdown">
+        </motion.div>
+        <motion.div whileHover={{scale:1.2}} whileTap={{scale:0.9}} className="dropdown">
           <Link href="/beliefs" ><a className="desktopNavLinks">Beliefs</a></Link>
-        </div>
-        <div className="dropdown">
+        </motion.div>
+        <motion.div whileHover={{scale:1.2}} whileTap={{scale:0.9}} className="dropdown">
           <Link href="/articles" ><a className="desktopNavLinks">Articles</a></Link>
-        </div>
+        </motion.div>
       </div>
       {/* Mobile offcanvas. */}
       <div className='mobileMenu'>
-        <button onClick={handleShow} id="menuIconB">
+        <motion.button whileTap={{scale:0.9}} onClick={handleShow} id="menuIconB">
           <div className='menuIconDiv'></div><div className='menuIconDiv'></div><div className='menuIconDiv'></div>
-        </button>
+        </motion.button>
         <Offcanvas show={show} onHide={handleClose} placement='end'>
           <Offcanvas.Header closeButton>
             <div></div>

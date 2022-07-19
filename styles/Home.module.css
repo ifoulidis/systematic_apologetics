@@ -13,6 +13,7 @@
   font-weight: 700;
   text-align: center;
   text-shadow: 4px 2px 4px rgb(180, 178, 173);
+  cursor: pointer;
 }
 
 .imageBox {

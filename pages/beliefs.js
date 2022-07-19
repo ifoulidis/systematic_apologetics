@@ -21,7 +21,8 @@ import SpiritualIcon from '../public/icons/meditation.png'
 function ACard(link, title, image, tags) {
   if (image){
     return (
-      <Link href={link}><motion.div className="beliefBox">
+      <Link href={link}><motion.div className="beliefBox"
+      whileTap={{scale:0.9}}>
         <Image src={image} alt='Icon.' width={32} height={32} layout='fixed'/>
         <h4 className="cardT">{title}</h4>
       </motion.div></Link>
@@ -29,7 +30,8 @@ function ACard(link, title, image, tags) {
   }
   else{
     return (
-      <Link href={link}><motion.div className="beliefBox">
+      <Link href={link}><motion.div className="beliefBox"
+      whileTap={{scale:0.9}}>
         <h4 className="cardT">{title}</h4>
       </motion.div></Link>
     )
