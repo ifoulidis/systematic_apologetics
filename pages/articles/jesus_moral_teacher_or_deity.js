@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Recommendations from '@/components/Recommendations.js';
 import {NavigationBar} from '@/components/navbar.js';
 import Image from 'next/image'
-import EmptyTomb from 'public/empty_tomb-lg.jpg'
+import EmptyTomb from '@/public/empty_tomb-lg.jpg'
 
 export default function JesusMoralTeacherOrDeity(){
   return(

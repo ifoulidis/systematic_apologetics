@@ -2,12 +2,12 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavigationBar} from '@/components/navbar.js'
 import Card from '@/components/Card.js';
-import Truth from '../public/images/truth-sm.jpg'
-import IslamImage from '../public/images/islam_symbol-sm.jpg'
-import SpaceImage from '../public/images/red_space-sm.jpg'
+import Truth from '@/public/images/truth-sm.jpg'
+import IslamImage from '@/public/images/islam_symbol-sm.jpg'
+import SpaceImage from '@/public/images/red_space-sm.jpg'
 
 //import {useState} from 'react'
-//import styles from "../styles/Articles.module.css";
+//import styles from "@/styles/Articles.module.css";
 
 
 

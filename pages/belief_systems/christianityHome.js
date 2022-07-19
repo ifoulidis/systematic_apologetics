@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import {NavigationBar} from '@/components/navbar'
-import ThreeWiseMen from 'public/images/three_wise_men-lg.jpg'
+import ThreeWiseMen from '@/public/images/three_wise_men-lg.jpg'
 import Image from 'next/image'
 
 export default function ChristianityHome(){
