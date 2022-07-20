@@ -116,8 +116,9 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 1.5rem;
-  gap: 1rem;
+  gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
 
 .beliefBox{
@@ -129,8 +130,32 @@ nav {
   background-color: white;
   display: flex;
   cursor: pointer;
+  align-items: center;
 }
 
+.beliefTitleDiv{
+  text-align: center;
+  width:100%;
+  font-weight: 500;
+  font-size: 1.4em;
+  font-family: 'Literata', Garamond;
+  color:steelblue;
+}
+
+.cardBox {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1.1em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .2s;
+}
 
 .cardBox:hover {
   -ms-transform: scale(1.1);
@@ -140,27 +165,11 @@ nav {
   transform: scale(1.1);
 }
 
-.cardBox {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 1em;
-  border: none;
-  border-radius: 0.2em;
-  font-size: 1.2em;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  cursor: pointer;
-  transition: transform .2s;
-}
-
 .cardT{
-  color: rgb(49, 153, 194);
+  color: steelblue;
   text-align: center;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: 'Literata', Garamond;
 }
 
@@ -298,6 +307,13 @@ iframe[src*=youtube] {
 /* ##################### */
 /* ##################### */
 @media screen and (max-width: 1280px) {
+  .grid-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .cardT {
+    font-size: 1.2em;
+  }
   .MainContentContainer {
     padding-top: 7%;
     padding-left: 10%;
@@ -307,18 +323,41 @@ iframe[src*=youtube] {
     min-width: 150%;
   }
   .cardBox{
-    max-width: 400px;
-    justify-self: center;
+    font-size: 1em;
   }
-  .grid-container { 
-    grid-template-columns: repeat(1, 1fr);
-    padding: 3% 10%; 
+
+}
+
+@media screen and (max-width: 990px) {
+  .grid-container {
+    margin: 3% 3%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* ##################### */
 @media screen and (max-width: 670px) {
   .grid-container {
-    padding: 3% 3%;
+    margin: 3% 7%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardT{
+    font-size: 1.5em;
+  }
+  .articleGrid{
+    font-size: 1.2em;
+  }
+  .dropdown{
+    display:none;
+  }
+  nav{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    margin: 0;
+  }
+  .mobileMenu{
+    display:flex;
   }
 }
 /* ##################### */
@@ -333,24 +372,15 @@ iframe[src*=youtube] {
     padding-left: 3%;
     padding-right: 3%;
   }
-  .dropdown{
-    display:none;
-  }
-  nav{
-    display:flex;
-    justify-content: space-between;
-    border-bottom: 3px solid black;
-    margin: 0;
-  }
-  .mobileMenu{
-    display:flex;
-  }
+  
   .grid-container { 
-    padding: 2%;
-    margin: 2em 0;
+    margin: 0 7%;
   }
   .articleGrid{
     font-size: 1em;
+  }
+  .cardT{
+    font-size: 1.2;
   }
   .homePagePic{
     display: flex;
@@ -358,4 +388,13 @@ iframe[src*=youtube] {
 /*   .titleBox h1{
     border-bottom: 1px solid gold;
   } */
+}
+
+@media screen and (max-width: 350px) {
+  .cardT{
+    font-size: 1.1em;
+  }
+  .articleGrid{
+    font-size: 0.8em;
+  }
 }

@@ -24,7 +24,7 @@ function ACard(link, title, image, tags) {
       <Link href={link}><motion.div className="beliefBox"
       whileTap={{scale:0.9}}>
         <Image src={image} alt='Icon.' width={32} height={32} layout='fixed'/>
-        <h4 className="cardT">{title}</h4>
+        <div className='beliefTitleDiv'><h4>{title}</h4></div>
       </motion.div></Link>
     )
   }
@@ -32,7 +32,7 @@ function ACard(link, title, image, tags) {
     return (
       <Link href={link}><motion.div className="beliefBox"
       whileTap={{scale:0.9}}>
-        <h4 className="cardT">{title}</h4>
+        <div className='beliefTitleDiv'><h4>{title}</h4></div>
       </motion.div></Link>
     )
   }
